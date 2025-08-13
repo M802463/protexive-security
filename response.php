@@ -238,11 +238,7 @@
                                 </li>
                                 <li><a href="operation.html">Operation</a></li>
                                 <li><a href="training.html">Training</a></li>
-                                <li><a href="why-us.html">Why Us</a></li>
-                                <li><a href="clients.html">Clients</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                               
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </div>
