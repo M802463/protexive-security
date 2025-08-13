@@ -1,0 +1,162 @@
+/* Container with overflow hidden */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.fadein {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(0, 100px);
+}
+
+.fadein.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fadeinTop {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(0, -100px);
+}
+
+.fadeinTop.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fadeinLeft {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(-100px, 0);
+}
+
+.fadeinLeft.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fadeinRight {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(100px, 0);
+}
+
+.fadeinRight.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Sequential Zoom in effect - faster animation */
+/* First zoom-in effect */
+.zoomin {
+    opacity: 0;
+    transform: scale(0.5);
+    /* Start small */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition-delay: 0s;
+    /* No delay for the first element */
+}
+
+.zoomin.visible {
+    opacity: 1;
+    transform: scale(1);
+    /* Normal size */
+}
+
+/* Second zoom-in effect */
+.zoomin1 {
+    opacity: 0;
+    transform: scale(0.5);
+    /* Start small */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition-delay: 0.2s;
+    /* Shorter delay for the second element */
+}
+
+.zoomin1.visible {
+    opacity: 1;
+    transform: scale(1);
+    /* Normal size */
+}
+
+/* Third zoom-in effect */
+.zoomin2 {
+    opacity: 0;
+    transform: scale(0.5);
+    /* Start small */
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.3s;
+    /* Shorter delay for the third element */
+}
+
+.zoomin2.visible {
+    opacity: 1;
+    transform: scale(1);
+    /* Normal size */
+}
+
+/* Fourth zoom-in effect */
+.zoomin3 {
+    opacity: 0;
+    transform: scale(0.5);
+    /* Start small */
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    transition-delay: 0.4s;
+    /* Shorter delay for the fourth element */
+}
+
+.zoomin3.visible {
+    opacity: 1;
+    transform: scale(1);
+    /* Normal size */
+}
+
+/* fivth zoom-in effect */
+.zoomin4 {
+    opacity: 0;
+    transform: scale(0.5);
+    /* Start small */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    transition-delay: 0.5s;
+    /* Shorter delay for the fourth element */
+}
+
+.zoomin4.visible {
+    opacity: 1;
+    transform: scale(1);
+    /* Normal size */
+}
+
+
+/* Zoom-out effect */
+.zoomout {
+    opacity: 0;
+    transform: scale(0.5);
+    /* Start at normal size */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Faster zoom out */
+}
+
+.zoomout.visible {
+    opacity: 1;
+    transform: scale(1);
+    /* Shrink */
+}
+
+
+/* .leFadeInRight span {
+    animation-name: leFadeInRight
+}
+
+@keyframes leFadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+

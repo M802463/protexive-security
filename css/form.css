@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+#contactForm {
+    padding: 1px 0px 15px 0px;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 1px;
+    margin-left: 0;
+}
+
+
+#contactForm h3 {
+    color: #0066cc;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#contactForm h4 {
+    margin: 0px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+fieldset2 {
+    display: block !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+    -webkit-padding-before: 0em !important;
+    -webkit-padding-start: 0em !important;
+    -webkit-padding-end: 0em !important;
+    -webkit-padding-after: 0em !important;
+    min-width: -webkit-min-content !important;
+    border-width: 0px !important;
+    border-style: groove !important;
+    border-color: threedface !important;
+    border-image: initial !important;
+}
+
+fieldset {
+    border: none;
+}
+
+/* creer-seeker */
+
+.career-seekers .grid {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+
+.career-seekers .grid .inupt-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 11px;
+}
+
+.career-seekers .grid .inupt-field input,
+select {
+    border: 1px solid #dcdcdc !important;
+    font-size: 14px !important;
+    color: #020202 !important;
+    border-radius: 30px !important;
+    width: 100%;
+    margin: 1% 0% !important;
+    padding: 12px 10px !important;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+}
+
+.career-seekers .grid .sub_btn {
+    grid-column: span 2;
+    padding: 12px 30px;
+    background-color: #004d7e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: .5px;
+    margin-top: 0%;
+    transition: all .3s linear;
+    width: fit-content;
+}
+
+.career-seekers .grid .inupt-field textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #fff;
+    margin: 1% 0%;
+    padding: 12px 10px;
+    border-radius: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc !important;
+    font-family: "Montserrat", sans-serif;
+    resize: vertical;
+    border-radius: 30px;
+}
+
+.job-seekers {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.job-seekers .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 7px;
+
+}
+
+.job-seekers .inupt-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0%;
+}
+
+.job-seekers .grid .inupt-field input,
+select {
+    border: 1px solid #dcdcdc !important;
+    font-size: 14px !important;
+    color: #020202 !important;
+    border-radius: 30px !important;
+    width: 100%;
+    margin: 1% 0% !important;
+    padding: 12px 10px !important;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+}
+
+.job-seekers .grid .sub_btn {
+    grid-column: span 2;
+    padding: 12px 30px;
+    background-color: #004d7e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: .5px;
+    margin-top: 0%;
+    transition: all .3s linear;
+    width: fit-content;
+}
+
+.job-seekers .grid .inupt-field textarea {
+    width: 98%;
+    height: 100px;
+    border: 1px solid #fff;
+    margin: 1%;
+    padding: 12px 10px;
+    border-radius: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc !important;
+    font-family: "Montserrat", sans-serif;
+    resize: vertical;
+    border-radius: 30px;
+}
+
+.job-seekers .grid2 {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 2%;
+
+}
+
+.job-seekers .grid2 .inupt-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0%;
+}
+
+.job-seekers .grid2 .inupt-field input,
+select {
+    border: 1px solid #dcdcdc !important;
+    font-size: 14px !important;
+    color: #020202 !important;
+    border-radius: 30px !important;
+    width: 100%;
+    margin: 1% 0% !important;
+    padding: 12px 10px !important;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+}
+
+.job-seekers .grid2 .sub_btn {
+    grid-column: span 2;
+    padding: 12px 30px;
+    background-color: #004d7e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: all .3s linear;
+    width: fit-content;
+    margin: 0 2%;
+}
+
+.job-seekers .grid2 .inupt-field textarea {
+    width: 100%;
+    border: 1px solid #fff;
+    margin: 1% 0%;
+    padding: 12px 10px;
+    border-radius: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc !important;
+    font-family: "Montserrat", sans-serif;
+    resize: vertical;
+    border-radius: 26px;
+}
+
+label {
+    margin: 0%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.label2 {
+    margin: 0 0%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm input[type="url"],
+#contactForm textarea {
+    width: 98%;
+    border: 1px solid #fff;
+    margin: 1% 0%;
+    float: left;
+    padding: 15px 10px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 6px;
+    font-size: 14px !important;
+    border-radius: 5px;
+}
+
+sup {
+    font-size: 18px;
+    color: #b73235;
+}
+
+#contactForm textarea {
+    width: 97% !important;
+    border: 1px solid #fff;
+    margin: 1% 1%;
+    padding: 16px 21px;
+    border-radius: 3px;
+    border-radius: 5px;
+}
+
+#contactForm select {
+    width: 98% !important;
+    border: 1px solid #e5e5e5 !important;
+    margin: 0 14px 0px;
+    padding: 12px 10px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 3px;
+}
+
+#contactForm button[type="submit"] {
+    font-family: "Montserrat", sans-serif;
+    background-color: #272a78;
+    padding: 12px 39px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    border: 0;
+    margin: 1%;
+}
+
+/* #contactForm button[type="submit"]:hover {
+	font-family: "Montserrat", sans-serif;
+    background-color: #004d7e;
+	padding: 12px 39px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+} */
+#contactForm input[type="email"] {
+    width: 98% !important;
+}
+
+#contactForm #number {
+    width: 48% !important;
+}
+
+
+#contactForm button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: 0;
+    border: 1px solid #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #313131 !important;
+    font-size: 15px !important;
+}
+
+:-moz-placeholder {
+    color: #313131 !important;
+    font-size: 15px !important;
+}
+
+::-moz-placeholder {
+    color: #313131 !important;
+    font-size: 15px !important;
+}
+
+:-ms-input-placeholder {
+    color: #313131 !important;
+    font-size: 15px !important;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm input[type="number"],
+#contactForm input[type="url"],
+#contactForm textarea {
+    border: 1px solid #dcdcdc !important;
+    font-size: 14px !important;
+    color: #020202 !important;
+    border-radius: 5px !important;
+    width: 98%;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:900px) {
+    .career-seekers .grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .job-seekers .grid {
+        display: block;
+    }
+
+    .job-seekers .grid .inupt-field input,
+    select {
+        width: 100%;
+    }
+
+    .label2 {
+        margin: 0 2%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .career-seekers .grid {
+        display: block;
+
+    }
+}
