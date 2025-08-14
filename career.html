@@ -55,13 +55,13 @@
 
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <script src='https://www.google.com/recaptcha/api.js'></script>
- <style>
+    <style>
         @media only screen and (max-width: 600px) {
-    .card_bullet2 ul li {
-        color: #000!important;
-    }
-  }
-  </style>
+            .card_bullet2 ul li {
+                color: #000 !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="b-clr">
@@ -70,34 +70,36 @@
         <div class="popup-container" id="popupContainer">
             <button class="popup-close-btn" id="popupCloseBtn">&times;</button>
             <h2>Request A Quote</h2>
-             <form action="response.php" method="POST">
+            <form action="response.php" method="POST">
                 <div class="form-group">
-                    <input type="text" id="name" placeholder=" " required>
+                    <input type="text" id="name" placeholder=" " name="name" required />
                     <label for="name">Your Name</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="text" id="subject" placeholder=" " required>
+                    <input type="text" id="subject" placeholder=" " name="subject" required />
                     <label for="subject">Enter Subject</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="email" id="email" placeholder=" ">
+                    <input type="email" id="email" placeholder=" " name="email" />
                     <label for="email">Enter Email</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="text" id="contact" placeholder=" ">
+                    <input type="text" id="contact" placeholder=" " name="contact" />
                     <label for="contact">Enter contact number</label>
                 </div>
 
                 <div class="form-group full-width">
-                    <textarea id="message" rows="5" placeholder=""></textarea>
+                    <textarea id="message" rows="5" placeholder="" name="message"></textarea>
                     <label for="message">Enter Message</label>
                 </div>
                 <div class="radio-group full-width">
-                    <label><input type="radio" value="Sales Team" name="connect"> Sales Team</label>
-                    <label><input type="radio" value="HR Team for Job" name="connect"> HR Team for Job</label>
+                    <label><input type="radio" value="Sales Team" name="team" /> Sales
+                        Team</label>
+                    <label><input type="radio" value="HR Team for Job" name="team" /> HR
+                        Team for Job</label>
                 </div>
                 <div class="form-group">
                     <div class="g-recaptcha" data-sitekey="6LeeKaQrAAAAAEh5cGoOjW7gFPoalHDV7395qda6"></div>
@@ -109,14 +111,14 @@
         </div>
     </div>
 
-     
+
     <div class="top_arrow">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
 
-     
 
-     
+
+
 
 
     <div class="top_main fix_nav">
@@ -195,73 +197,73 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-            </div>
+        </div>
 
-            <div class="col_sm1 transition">
-                <div class="top">
-                    <div class="navbarrr">
-                        <div id="cssmenu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="#">Security Services</a>
-                                    <ul>
-                                        <li><a href="security-guard.html">Security Guard</a></li>
-                                        <li><a href="bouncer-bodyguard.html">Bouncer and Bodyguard</a></li>
-                                        <li><a href="escort-guard.html">Escort Guard</a></li>
-                                        <li><a href="female-security-guard.html">Female Security
-                                                Guard</a></li>
-                                        <li><a href="cash-management.html">Cash Management</a></li>
-                                        <li><a href="dog-squads-service.html">Dog Squads Service</a></li>
-                                        <li><a href="event-security.html">Event Security</a></li>
-                                        <li><a href="tourist-security.html">Tourist Security</a></li>
-                                        <li><a href="office-security.html">Office Security</a></li>
-                                        <li><a href="building-security.html">Building Security</a></li>
-                                        <li><a href="bank-security.html">Bank Security</a></li>
-                                        <li><a href="industrial-security.html">Industrial Security</a></li>
-                                        <li><a href="retail-security.html">Retail Security</a></li>
-                                        <li><a href="hospital-security.html">Hospital Security</a></li>
-                                        <li><a href="property-security.html">Property Security</a></li>
-                                        <li><a href="school-security.html">School Security</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Facility Service</a>
-                                    <ul>
-                                        <li><a href="housekeeping-service.html">Housekeeping Service</a></li>
-                                        <li><a href="office-boy-pantry-boy.html">Office Boy & Pantry Boy</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Manpower Services</a>
-                                    <ul>
-                                        <li><a href="front-back-office-manpower.html">Front &amp; Back Office
-                                                Manpower</a></li>
-                                        <li><a href="temp-staffing.html">Temp Staffing</a>
-                                        </li>
-                                        <li><a href="event-staff.html">Event Staff</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="operation.html">Operation</a></li>
-                                <li><a href="training.html">Training</a></li>
-                               
-                                <li><a href="contact-us.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
+        <div class="col_sm1 transition">
+            <div class="top">
+                <div class="navbarrr">
+                    <div id="cssmenu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="#">Security Services</a>
+                                <ul>
+                                    <li><a href="security-guard.html">Security Guard</a></li>
+                                    <li><a href="bouncer-bodyguard.html">Bouncer and Bodyguard</a></li>
+                                    <li><a href="escort-guard.html">Escort Guard</a></li>
+                                    <li><a href="female-security-guard.html">Female Security
+                                            Guard</a></li>
+                                    <li><a href="cash-management.html">Cash Management</a></li>
+                                    <li><a href="dog-squads-service.html">Dog Squads Service</a></li>
+                                    <li><a href="event-security.html">Event Security</a></li>
+                                    <li><a href="tourist-security.html">Tourist Security</a></li>
+                                    <li><a href="office-security.html">Office Security</a></li>
+                                    <li><a href="building-security.html">Building Security</a></li>
+                                    <li><a href="bank-security.html">Bank Security</a></li>
+                                    <li><a href="industrial-security.html">Industrial Security</a></li>
+                                    <li><a href="retail-security.html">Retail Security</a></li>
+                                    <li><a href="hospital-security.html">Hospital Security</a></li>
+                                    <li><a href="property-security.html">Property Security</a></li>
+                                    <li><a href="school-security.html">School Security</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Facility Service</a>
+                                <ul>
+                                    <li><a href="housekeeping-service.html">Housekeeping Service</a></li>
+                                    <li><a href="office-boy-pantry-boy.html">Office Boy & Pantry Boy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Manpower Services</a>
+                                <ul>
+                                    <li><a href="front-back-office-manpower.html">Front &amp; Back Office
+                                            Manpower</a></li>
+                                    <li><a href="temp-staffing.html">Temp Staffing</a>
+                                    </li>
+                                    <li><a href="event-staff.html">Event Staff</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="operation.html">Operation</a></li>
+                            <li><a href="training.html">Training</a></li>
+                            <li><a href="clients.html">Clientele</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
                     </div>
                     <div class="clear"></div>
                 </div>
                 <div class="clear"></div>
             </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
     </div>
     <!-----top_main end---->
 
     <!-----banner------>
     <div class="banner rel">
         <img src="./images/career-banner.jpg" alt="" class="img">
-         
+
     </div>
     <!-----banner------>
 
@@ -283,29 +285,36 @@
                 <h3 class="cssanimation leFadeInRight sequence">CAREER</h3>
                 <h4>HR Policy</h4>
                 <p>
-                    Protexive Security Services recruits large number of people every year. We nurture and cherish our employees and
+                    Protexive Security Services recruits large number of people every year. We nurture and cherish our
+                    employees and
                     they, in turn, relish the opportunity of working with an organisation that takes care of their
-                    needs. Working with the Protexive Security Services gives our people experience in a variety of industries, in
+                    needs. Working with the Protexive Security Services gives our people experience in a variety of
+                    industries, in
                     addition to training in various disciplines. Our employees are expected to adhere to a code of
                     conduct that prescribes the highest ethical standards. <br><br>
 
-                    Thank you for taking interest in joining the Protexive Security Services, India’s premier security company. We are
-                    an Equal Opportunity Employer. At Protexive Security Services, we just don’t talk about career pathing and
+                    Thank you for taking interest in joining the Protexive Security Services, India’s premier security
+                    company. We are
+                    an Equal Opportunity Employer. At Protexive Security Services, we just don’t talk about career
+                    pathing and
                     development, we DO IT. Throughout the year we have vacancy for security guard job in India for 8
                     hours and 12 hours. Salary for 8 hours and 12 hours security guard job varies depending upon the
-                    location. We have security guard job for night shift and day shift. At Protexive Security Services, you will find a
+                    location. We have security guard job for night shift and day shift. At Protexive Security Services,
+                    you will find a
                     charged and vibrant environment where leaders are developed through constant guidance, counselling
                     and are appreciated on their good performances. We invite you to explore our site and get to know
                     the Protexive Security Services better.
                 </p>
                 <h4>How to reach us?</h4>
-                <p>You can email your resume to HR department on <a href="mailto:sales@protexivesecurity.com"> sales@protexivesecurity.com</a> or fill out the below form and
+                <p>You can email your resume to HR department on <a href="mailto:sales@protexivesecurity.com">
+                        sales@protexivesecurity.com</a> or fill out the below form and
                     attach you latest CV. Inquiry on phone will not be entertained and candidate will be permanently
                     blacklisted. Please do not call us for job openings and inquires. <br><br>
 
                     WE DO NOT ASK FOR ANY UPFRONT PAYMENT FOR ANY JOB OR GIVING OFFER/APPOINTMENT LETTER. Do not make
                     any payment to any person except in our office for uniform. Anyone asking for money upfront for job,
-                    please report to us on <a href="mailto:sales@protexivesecurity.com"> sales@protexivesecurity.com</a>. <br><br>
+                    please report to us on <a href="mailto:sales@protexivesecurity.com">
+                        sales@protexivesecurity.com</a>. <br><br>
 
                     If any amount paid by you to any person including any agent or third party or any person directly or
                     indirectly associated with us, we would not be responsible for it. </p>
@@ -324,7 +333,7 @@
                 <h4>Job Application</h4><br>
                 <div class="application-wrapper">
 
-                     <form action="response.php" method="POST">
+                    <form action="response-career.php" method="POST" enctype="multipart/form-data">
                         <div class="input-grid">
                             <div class="field-block">
                                 <label>Candidate Name</label>
@@ -360,7 +369,10 @@
                             </div>
                             <div class="field-block">
                                 <label>Upload CV* (PDF / DOC)</label>
-                                <input type="file" name="cv" accept=".pdf,.doc,.docx">
+                                <input type="file" name="cv" required accept=".pdf,.doc,.docx">
+                            </div>
+                            <div style="margin-left: 1%" class="g-recaptcha"
+                                data-sitekey="6LeeKaQrAAAAAEh5cGoOjW7gFPoalHDV7395qda6">
                             </div>
                         </div>
                         <div class="form-action">
@@ -378,158 +390,267 @@
                     <li>Technician</li>
                 </ul>
                 <div style="overflow-x:auto;">
-                 <!-- Area Officer -->
-  <table class="job-table">
-    <thead>
-      <tr><th colspan="2" class="table-heading">Area Officer</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="field-title">Scope and Responsibilities</td><td class="field-content">» Handling day to day site operation</td></tr>
-      <tr><td class="field-title">Experience</td><td class="field-content">» 2 years of experience as Area Officer</td></tr>
-      <tr><td class="field-title">Competencies</td>
-        <td class="field-content">» Well versed with local business environment<br>» Capable of providing classroom and onsite Training</td>
-      </tr>
-      <tr><td class="field-title">Personality Traits</td>
-        <td class="field-content">» Honest, hardworking and responsible<br>» Enthusiastic and energetic<br>» Capable of working in a dynamic environment<br>» Team player</td>
-      </tr>
-      <tr><td class="field-title">Years of Experience</td><td class="field-content">Minimum 5 years in the security industry</td></tr>
-      <tr><td class="field-title">Qualifications</td><td class="field-content">Preferably Graduate</td></tr>
-      <tr><td class="field-title">Age (range)</td><td class="field-content">27–45 years</td></tr>
-      <tr><td class="field-title">Location</td><td class="field-content">Mumbai, Hyderabad and Pune</td></tr>
-    </tbody>
-  </table>
+                    <!-- Area Officer -->
+                    <table class="job-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-heading">Area Officer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="field-title">Scope and Responsibilities</td>
+                                <td class="field-content">» Handling day to day site operation</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Experience</td>
+                                <td class="field-content">» 2 years of experience as Area Officer</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Competencies</td>
+                                <td class="field-content">» Well versed with local business environment<br>» Capable of
+                                    providing classroom and onsite Training</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Personality Traits</td>
+                                <td class="field-content">» Honest, hardworking and responsible<br>» Enthusiastic and
+                                    energetic<br>» Capable of working in a dynamic environment<br>» Team player</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Years of Experience</td>
+                                <td class="field-content">Minimum 5 years in the security industry</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Qualifications</td>
+                                <td class="field-content">Preferably Graduate</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Age (range)</td>
+                                <td class="field-content">27–45 years</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Location</td>
+                                <td class="field-content">Mumbai, Hyderabad and Pune</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-  <!-- Accounts Executive -->
-  <table class="job-table">
-    <thead>
-      <tr><th colspan="2" class="table-heading">Accounts Executive</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="field-title">Function / Dept.</td><td class="field-content">Accounts</td></tr>
-      <tr><td class="field-title">Job Title</td><td class="field-content">Accounts Executive</td></tr>
-      <tr><td class="field-title">Responsibilities</td>
-        <td class="field-content">
-          » Maintaining transactions in Tally ERP 9<br>
-          » Timely preparation of payroll & invoice<br>
-          » Filing returns (PF, ESI, P.Tax, GST, etc.)<br>
-          » Job to be accomplished through a team
-        </td>
-      </tr>
-      <tr><td class="field-title">Competencies</td>
-        <td class="field-content">
-          » Knowledge of Tally and advance Excel<br>
-          » Familiarity with PF, ESI, TDS is preferred
-        </td>
-      </tr>
-      <tr><td class="field-title">Experience</td><td class="field-content">Minimum 2 years</td></tr>
-      <tr><td class="field-title">Qualifications</td><td class="field-content">Graduate</td></tr>
-      <tr><td class="field-title">Age</td><td class="field-content">20–35 years</td></tr>
-      <tr><td class="field-title">Location</td><td class="field-content">Mumbai</td></tr>
-    </tbody>
-  </table>
+                    <!-- Accounts Executive -->
+                    <table class="job-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-heading">Accounts Executive</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="field-title">Function / Dept.</td>
+                                <td class="field-content">Accounts</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Job Title</td>
+                                <td class="field-content">Accounts Executive</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Responsibilities</td>
+                                <td class="field-content">
+                                    » Maintaining transactions in Tally ERP 9<br>
+                                    » Timely preparation of payroll & invoice<br>
+                                    » Filing returns (PF, ESI, P.Tax, GST, etc.)<br>
+                                    » Job to be accomplished through a team
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Competencies</td>
+                                <td class="field-content">
+                                    » Knowledge of Tally and advance Excel<br>
+                                    » Familiarity with PF, ESI, TDS is preferred
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Experience</td>
+                                <td class="field-content">Minimum 2 years</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Qualifications</td>
+                                <td class="field-content">Graduate</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Age</td>
+                                <td class="field-content">20–35 years</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Location</td>
+                                <td class="field-content">Mumbai</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-  <!-- Sales Executive -->
-  <table class="job-table">
-    <thead>
-      <tr><th colspan="2" class="table-heading">Sales Executive</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="field-title">Function / Dept.</td><td class="field-content">Sales & Marketing</td></tr>
-      <tr><td class="field-title">Job Title</td><td class="field-content">Sales Executive</td></tr>
-      <tr><td class="field-title">Responsibilities</td>
-        <td class="field-content">
-          » Business Development<br>
-          » Attending inquiry<br>
-          » Sending quotation and follow-up<br>
-          » Meeting prospective clients<br>
-          » Marketing
-        </td>
-      </tr>
-      <tr><td class="field-title">Competencies</td>
-        <td class="field-content">
-          » Understanding of Security Industry<br>
-          » Local business knowledge<br>
-          » Strong Analytical skills
-        </td>
-      </tr>
-      <tr><td class="field-title">Personality Traits</td>
-        <td class="field-content">
-          » Excellent written and verbal communication<br>
-          » Strong influencing & presentation skills<br>
-          » Energetic & capable of working in dynamic environment<br>
-          » Team player
-        </td>
-      </tr>
-      <tr><td class="field-title">Experience</td><td class="field-content">Minimum 3 years</td></tr>
-      <tr><td class="field-title">Qualifications</td><td class="field-content">Preferably Graduate</td></tr>
-      <tr><td class="field-title">Age</td><td class="field-content">Open for all</td></tr>
-      <tr><td class="field-title">Location</td><td class="field-content">Mumbai</td></tr>
-    </tbody>
-  </table>
+                    <!-- Sales Executive -->
+                    <table class="job-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-heading">Sales Executive</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="field-title">Function / Dept.</td>
+                                <td class="field-content">Sales & Marketing</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Job Title</td>
+                                <td class="field-content">Sales Executive</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Responsibilities</td>
+                                <td class="field-content">
+                                    » Business Development<br>
+                                    » Attending inquiry<br>
+                                    » Sending quotation and follow-up<br>
+                                    » Meeting prospective clients<br>
+                                    » Marketing
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Competencies</td>
+                                <td class="field-content">
+                                    » Understanding of Security Industry<br>
+                                    » Local business knowledge<br>
+                                    » Strong Analytical skills
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Personality Traits</td>
+                                <td class="field-content">
+                                    » Excellent written and verbal communication<br>
+                                    » Strong influencing & presentation skills<br>
+                                    » Energetic & capable of working in dynamic environment<br>
+                                    » Team player
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Experience</td>
+                                <td class="field-content">Minimum 3 years</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Qualifications</td>
+                                <td class="field-content">Preferably Graduate</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Age</td>
+                                <td class="field-content">Open for all</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Location</td>
+                                <td class="field-content">Mumbai</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-  <!-- Security Guard -->
-  <table class="job-table">
-    <thead>
-      <tr><th colspan="2" class="table-heading">Security Guard</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="field-title">Physical Requirement</td>
-        <td class="field-content">
-          » Height 5.7 Feet and above<br>
-          » BMI under 25<br>
-          » No flat foot or locked knees<br>
-          » 6/6 vision (with or without specs)<br>
-          » Fit and agile<br>
-          » Disease-free
-        </td>
-      </tr>
-      <tr><td class="field-title">Education</td>
-        <td class="field-content">
-          » 10th Pass and above<br>
-          » Able to read/write English
-        </td>
-      </tr>
-      <tr><td class="field-title">Experience</td><td class="field-content">Preferably 2 years, freshers welcome</td></tr>
-      <tr><td class="field-title">Age</td><td class="field-content">18–45 years</td></tr>
-      <tr><td class="field-title">Location</td><td class="field-content">Mumbai, Pune, Hyderabad</td></tr>
-    </tbody>
-  </table>
+                    <!-- Security Guard -->
+                    <table class="job-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-heading">Security Guard</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="field-title">Physical Requirement</td>
+                                <td class="field-content">
+                                    » Height 5.7 Feet and above<br>
+                                    » BMI under 25<br>
+                                    » No flat foot or locked knees<br>
+                                    » 6/6 vision (with or without specs)<br>
+                                    » Fit and agile<br>
+                                    » Disease-free
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Education</td>
+                                <td class="field-content">
+                                    » 10th Pass and above<br>
+                                    » Able to read/write English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Experience</td>
+                                <td class="field-content">Preferably 2 years, freshers welcome</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Age</td>
+                                <td class="field-content">18–45 years</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Location</td>
+                                <td class="field-content">Mumbai, Pune, Hyderabad</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-  <!-- Housekeeping & Pantry Boy -->
-  <table class="job-table">
-    <thead>
-      <tr><th colspan="2" class="table-heading">Housekeeping, Pantry Boy and Office Boy</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="field-title">Physical Requirement</td>
-        <td class="field-content">» Fit and agile<br>» Free from communicable disease</td>
-      </tr>
-      <tr><td class="field-title">Education</td>
-        <td class="field-content">» 10th Pass and above<br>» Able to read/write English</td>
-      </tr>
-      <tr><td class="field-title">Experience</td><td class="field-content">Preferably 2 years, freshers welcome</td></tr>
-      <tr><td class="field-title">Age</td><td class="field-content">18–45 years</td></tr>
-      <tr><td class="field-title">Location</td><td class="field-content">Mumbai and Hyderabad</td></tr>
-    </tbody>
-  </table>
+                    <!-- Housekeeping & Pantry Boy -->
+                    <table class="job-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-heading">Housekeeping, Pantry Boy and Office Boy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="field-title">Physical Requirement</td>
+                                <td class="field-content">» Fit and agile<br>» Free from communicable disease</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Education</td>
+                                <td class="field-content">» 10th Pass and above<br>» Able to read/write English</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Experience</td>
+                                <td class="field-content">Preferably 2 years, freshers welcome</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Age</td>
+                                <td class="field-content">18–45 years</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Location</td>
+                                <td class="field-content">Mumbai and Hyderabad</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-  <!-- Technician -->
-  <table class="job-table">
-    <thead>
-      <tr><th colspan="2" class="table-heading">Technician</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="field-title">Field</td>
-        <td class="field-content">Carpenter, Plumber, Electrician, Driver, Gardener, Cook, Nurse and Caretaker</td>
-      </tr>
-      <tr><td class="field-title">Education</td>
-        <td class="field-content">ITI or relevant course (in respective field)</td>
-      </tr>
-      <tr><td class="field-title">Experience</td><td class="field-content">Open for all</td></tr>
-      <tr><td class="field-title">Age</td><td class="field-content">Open for all</td></tr>
-      <tr><td class="field-title">Location</td><td class="field-content">Mumbai</td></tr>
-    </tbody>
-  </table>
+                    <!-- Technician -->
+                    <table class="job-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-heading">Technician</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="field-title">Field</td>
+                                <td class="field-content">Carpenter, Plumber, Electrician, Driver, Gardener, Cook, Nurse
+                                    and Caretaker</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Education</td>
+                                <td class="field-content">ITI or relevant course (in respective field)</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Experience</td>
+                                <td class="field-content">Open for all</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Age</td>
+                                <td class="field-content">Open for all</td>
+                            </tr>
+                            <tr>
+                                <td class="field-title">Location</td>
+                                <td class="field-content">Mumbai</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div>
             </div>
@@ -573,7 +694,8 @@
                 <i class="fa-solid fa-envelope footer_icon"></i>
                 <a href="mailto:sales@protexivesecurity.com" class="link2">sales@protexivesecurity.com</a><br><br>
                 <i class="fa-solid fa-envelope footer_icon"></i>
-                <a href="mailto:operations@protexivesecurity.com" class="link2">operations@protexivesecurity.com</a><br><br>
+                <a href="mailto:operations@protexivesecurity.com"
+                    class="link2">operations@protexivesecurity.com</a><br><br>
 
                 <i class="fa-solid fa-map-location-dot footer_icon"></i>
                 <a href="https://maps.app.goo.gl/rmpyJ7F6cq3yoApx5" target="_blank" class="link2">Google Map</a>
@@ -648,7 +770,7 @@
                     <li><a href="#">Mumbai</a></li>
                     <li><a href="#">Pune</a></li>
                 </ul><br>
-                 
+
             </div>
 
             <div class="clear"></div>

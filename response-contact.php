@@ -55,6 +55,43 @@
 
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <style type="text/css">
+        #mybutton {
+            position: fixed;
+            bottom: 10px;
+            right: 5px;
+        }
+
+        .thanks {
+            padding: 10% 5% 10%;
+        }
+
+        .thanks h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            word-spacing: 3px;
+            font-weight: 700;
+            color: #025c89;
+            width: 100%;
+            margin: 0% !important;
+        }
+
+        @media only screen and (max-width:960px) {
+            .thanks {
+                padding: 17% 5% !important;
+            }
+        }
+    </style>
+
+    <script>
+        setTimeout(function () {
+            window.location.href = 'contact-us.html';
+        }, 10000);
+    </script>
 
 </head>
 
@@ -64,7 +101,7 @@
         <div class="popup-container" id="popupContainer">
             <button class="popup-close-btn" id="popupCloseBtn">&times;</button>
             <h2>Request A Quote</h2>
-             <form action="response.php" method="POST">
+            <form action="response.php" method="POST">
         <div class="form-group">
           <input type="text" id="name" placeholder=" "name="name" required />
           <label for="name">Your Name</label>
@@ -105,47 +142,11 @@
         </div>
     </div>
 
-     
     <div class="top_arrow">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
 
-     
-
-     
-
-
     <div class="top_main fix_nav">
-        <!-- <div class="col_sm1 top_bar">
-            <div class="top top_flexs2">
-
-                <div class="top_info">
-                    <p>Elevate your safety standards today.</p>
-                </div>
-
-                <div class="top_social">
-                    <a href="https://www.facebook.com/Protexive/" class="link3" target="_blank"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/protexive-security-services-1502b220b/" class="link3"
-                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <div class="whatsapp-icon top_flex2">
-                    <a href="https://wa.me/+918591456767" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon-whatsapp.webp" alt="" style="position: relative;left: -2px;">
-                        whatsapp
-                    </a>
-                </div>
-                <div class="click-call top_flex2">
-                    <a href="tel:+918591456767" rel="noopener noreferrer">
-                        <img src="images/click-to-call.webp" alt="" class="img">
-                    </a>
-                </div>
-                <div class="clear top_flexs3"></div>
-            </div>
-            <div class="clear"></div>
-        </div> -->
         <div class="">
             <div class="col_sm1 menu_de transition">
                 <div class="top top_flex">
@@ -198,11 +199,11 @@
                     <div class="navbarrr">
                         <div id="cssmenu">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="index.html">Home</a></li>
                                 <li><a href="about-us.html">About Us</a></li>
-                                <li class="active"><a href="#">Security Services</a>
+                                <li><a href="#">Security Services</a>
                                     <ul>
-                                        <li class="active"><a href="security-guard.html">Security Guard</a></li>
+                                        <li><a href="security-guard.html">Security Guard</a></li>
                                         <li><a href="bouncer-bodyguard.html">Bouncer and Bodyguard</a></li>
                                         <li><a href="escort-guard.html">Escort Guard</a></li>
                                         <li><a href="female-security-guard.html">Female Security
@@ -239,7 +240,7 @@
                                 </li>
                                 <li><a href="operation.html">Operation</a></li>
                                 <li><a href="training.html">Training</a></li>
-                              <li><a href="clients.html">Clientele</a></li>
+                                <li><a href="clients.html">Clientele</a></li>
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -254,197 +255,81 @@
     </div>
     <!-----top_main end---->
 
-    <!-----banner------>
-    <div class="banner rel">
-        <img src="./images/security-guard-banner.jpg" alt="" class="img">
+    <div class="thanks">
+
+      <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+if ($_POST) {
+    $recaptcha = $_POST['g-recaptcha-response'];
+
+    // Validate reCAPTCHA via cURL
+    $secret = '6LeeKaQrAAAAAMvPgeHF7Lq5pHkBI-FjupMjAa75';
+    $verifyURL = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $recaptcha;
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $verifyURL);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    $verify = curl_exec($ch);
+    curl_close($ch);
+
+    $response = json_decode($verify);
+
+    if ($response && $response->success) {
+        // Prepare email content
+        $msg  = "Contact Form Details - Protexive Security Services<br>";
+        $msg .= "Full Name: " . $_POST["name"] . "<br>";
+        $msg .= "Email: " . $_POST["email"] . "<br>";
+        $msg .= "Contact: " . $_POST["contact"] . "<br>";
+        $msg .= "Subject: " . $_POST["subject"] . "<br>";
+        $msg .= "Message: " . $_POST["message"] . "<br>";
+
+        // Load PHPMailer
+        require 'PHPMailer/PHPMailer.php';
+        require 'PHPMailer/SMTP.php';
+        require 'PHPMailer/Exception.php';
+
+        $mail = new PHPMailer(true);
+
+        try {
+            $mail->isSMTP();
+            $mail->Host       = 'mail.protexivesecurity.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = '_mainaccount@protexivesecurity.com'; // fixed: removed tab
+            $mail->Password   = 'TnRpHK7@2Z';
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use implicit SSL
+            $mail->Port       = 465; // Matches ENCRYPTION_SMTPS
+
+            // SSL options (disable verification if testing)
+            $mail->SMTPOptions = [
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                    'allow_self_signed' => true
+                ]
+            ];
+
+            $mail->setFrom('sales@protexivesecurity.com', 'Protexive Security');
+            $mail->addAddress('sales@protexivesecurity.com');
+            $mail->isHTML(true);
+            $mail->Subject = 'Contact Form Details';
+            $mail->Body    = $msg;
+
+            $mail->send();
+            echo '<h2>Thank you for your Interest. We will be in touch shortly.</h2>';
+        } catch (Exception $e) {
+            echo '<h2>Message could not be sent. Mailer Error: ' . $mail->ErrorInfo . '</h2>';
+        }
+    } else {
+        echo '<h2>reCAPTCHA failed. Please try again</h2>';
+    }
+}
+?>
+
     </div>
-    <!-----banner------>
-
-    <!-----welcome note------>
-
-    <div class="col_sm1 hero4 overflow-hidden rel">
-        <div class="sticky_logo">
-            <div class="contact-top logicBtn ak">
-                <a class="trigger-popup-btn popupTriggerBtn" id="popupTriggerBtn">Request A Quote</a>
-            </div>
-            <div>
-                <img src="images/client43.jpg" alt="" class="logo_index1">
-                <img src="images/logo2.png" alt="" class="logo_index2">
-                <img src="images/logo3.jpg" alt="" class="logo_index3">
-            </div>
-        </div>
-        <div class="top3 wel_flex">
-            <div class="col_sm11 res_wek fadeinLeft ">
-                <img src="./images/security-guard-wel.jpg" alt="" class="img">
-            </div>
-            <div class="col_sm111 wel_txt card_bullet3 fadeinRight">
-                <h3 class="cssanimation leFadeInRight sequence">Security Guard</h3>
-                <h4>Manned Guarding Service – <span>Armed and Unarmed</span></h4>
-                <p>
-                    Security guards are essential to both residential and commercial spaces, offering protection that
-                    technology alone cannot match. They play a vital role in safeguarding life and property. We are
-                    proud to be one of the leading security guard providers in Mumbai.
-                </p>
-
-                <ul>
-                    <li>Security Guard</li>
-                    <li>Head Guard</li>
-                    <li>Security Supervisor</li>
-                    <li>Assistant Security Officer</li>
-                    <li>Security Officer</li>
-                    <li>Armed Guard</li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-
-    <div class="col_sm1"><br><br>
-        <div class="top3">
-            <div class="col_sm3 card serv_shd">
-                <div class="image-container">
-                    <img src="./images/security-guard2.jpg" alt="" class="img">
-                </div>
-                <div class="icon">
-                    <img src="images/security-services-icon1.png" alt="" class="img">
-                </div>
-                <div class="content">
-                    <h2>Security Supervisor</h2>
-                    <p>A Security Supervisor oversees guard assignments, monitors daily operations, and ensures
-                        compliance with protocols, acting as the link between the security team and the Security
-                        Officer.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col_sm3 card serv_shd">
-                <div class="image-container">
-                    <img src="./images/security-guard3.jpg" alt="" class="img">
-                </div>
-                <div class="icon">
-                    <img src="images/security-services-icon1.png" alt="" class="img">
-                </div>
-                <div class="content">
-                    <h2>Security Officer</h2>
-                    <p>A Security Officer manages larger security teams, handles training, reporting, and oversees all
-                        security operations. They report to the Operations Manager.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col_sm3 card serv_shd">
-                <div class="image-container">
-                    <img src="./images/security-guard4.jpg" alt="" class="img">
-                </div>
-                <div class="icon">
-                    <img src="images/security-services-icon1.png" alt="" class="img">
-                </div>
-                <div class="content">
-                    <h2>Armed Guard</h2>
-                    <p>Armed guards are deployed in high-risk scenarios to protect VIPs or valuables. Their presence
-                        deters crime, and they are trained to use weapons responsibly to safeguard life and property.
-                    </p>
-                    </a>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div><br><br>
-        <div class="clear"></div>
-    </div>
-
-    <!-----welcome note------>
-
-    <!-- <div class="col_sm1 rel over overflow-hidden"><br><br><br>
-        <div class="top3">
-
-            <div class="why_effect">
-                <img src="images/why-effect.png" alt="">
-            </div>
-
-            <div class="col_sm100_2 wel_txt card_bullet fadeinRight">
-                <h3>Trained Human Resources</h3>
-                <p>We have a number of security personnel, armed personal body guards and employees who are trained and
-                    skilled with expertise and skills for different jobs. We also provide staff for house keeping, to
-                    labour contractors, as delivery boys to courier companies, drivers to transporters, cleaners to
-                    logistics companies and human resources for many commercial and even gardening or utility/waste
-                    management requirements. The male and female persons we provide are ethical, honest, discreet and
-                    efficient. <br><br>
-
-                    We take our training very seriously which is why we have affiliated with Sparta Security Services -
-                    an Approved Highfield Centre which provides our staff with a vast range of world class courses
-                    related to the Security, First Aid, Risk Mitigation, Health & Safety, Close Protection and Conflict
-                    Management, besides others. Sparta Security Services being founded by a UK Special Forces (SAS)
-                    veteran imparts training and skills similar to those practiced in the military and armed forces. It
-                    is committed to the ISO 9001:15 Quality Management System which speaks for its internationally
-                    benchmarked training given to our staff. In-house residential training is also provided on the lines
-                    of regular training programmes conducted as per PSARA Act for all security personnel.</p>
-                <ul>
-                    <li>Electronic Surveillance</li>
-                    <li>Procedures & Reporting</li>
-                    <li>Combat & Martial Arts</li>
-                    <li>Use of Lathis & Ropes</li>
-                    <li>Chase, Climb & Jump</li>
-                    <li>Parades & Marching</li>
-                    <li>Crowd Management</li>
-                    <li>Physical Training</li>
-                    <li>Fire Fighting</li>
-                    <li>Self Defense</li>
-                    <li>First Aid</li>
-                </ul>
-                <p>All our employees are paid on time and well above the government notified minimum wages, besides
-                    being covered by insurance and enjoying other benefits like PF, ESIC, Bonus, Gratuity, Increments...
-                    They are supervised and performance is monitored by management professionals for effective proper
-                    responses to emergencies and changing situations at the ground zero level. Regular meetings are held
-                    to brief managers and executives on innovative strategies, latest developments, new or changing
-                    rules, equipment demos, staff welfare, solutions update, reporting, analysis, study, etc. All of
-                    which ensures real time 24 x 7 service to the customer and guaranteeing satisfaction. We have a
-                    loyal team in the Vigilance Department that watches over the personnel, gathers feedback, monitors
-                    staff activities, conducts surprise checks and night visits to ensure that the our personnel are
-                    performing their duties correctly and adhering to the highest standards of excellence.</p>
-
-                <div>
-                    <a href="about-us.html" class="wel_btn logicBtn">Read More</a>
-                    <img src="images/about-one-shape-3.png" alt="" class="effect-mini3">
-                </div>
-            </div>
-            <div class="col_sm10_2 rel fadeinLeft">
-                <img src="images/why-choose-img.png" alt="" class="img">
-            </div>
-
-            <div class="clear"></div>
-        </div><br><br>
-        <div class="clear"></div>
-    </div>
-
-
-    <div class="col_sm1 hero3 overflow-hidden">
-        <div class="top3 traing_flex">
-
-            <div class="col_sm2 fadeinLeft">
-                <img src="images/training.jpg" alt="" class="img">
-            </div>
-            <div class="col_sm2 wel_txt2 card_bullet2 fadeinRight">
-                <h2>Solutions</h2>
-                <h3>Infrastructure</h3>
-                <p>We possess an extensive range of CCTV, communication and surveillance electronic devices to maintain
-                    the quality standard of our services as per the client's requirement. Protexive Security Services
-                    sources its security related equipment from world industry leaders overseas. We are thus able to
-                    support our staff on ground and maintain a network of branches in every state of the country. All
-                    our employees are connected in a pyramid format up to the Director level either by mobiles, phones,
-                    wireless radio, walky-talkies or laptops making internal communication and that with our clients
-                    instantaneous - even in far reaching and difficult challenging regions. We have a centralized
-                    provision for supplies like personal care, uniforms, lathis or boots. Our airy residential and
-                    resting rooms have facilities like bedding, utilities, cleaning, food, etc. to ensure that our
-                    personnel's needs are well taken care of. They are given complete logistics support for pick-up and
-                    drop to site, while all our offices are kept 24 x 7 x 365 days open to provide uninterruptible
-                    services to our valuable clients.</p>
-
-                <a href="about-us.html" class="wel_btn logicBtn">Read More</a><br><br>
-            </div>
-
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-    </div> -->
 
     <!-------footer------>
     <div class="col_sm1 hero5 footer_sp">
@@ -478,7 +363,8 @@
                 <i class="fa-solid fa-envelope footer_icon"></i>
                 <a href="mailto:sales@protexivesecurity.com" class="link2">sales@protexivesecurity.com</a><br><br>
                 <i class="fa-solid fa-envelope footer_icon"></i>
-                <a href="mailto:operations@protexivesecurity.com" class="link2">operations@protexivesecurity.com</a><br><br>
+                <a href="mailto:operations@protexivesecurity.com"
+                    class="link2">operations@protexivesecurity.com</a><br><br>
 
                 <i class="fa-solid fa-map-location-dot footer_icon"></i>
                 <a href="https://maps.app.goo.gl/rmpyJ7F6cq3yoApx5" target="_blank" class="link2">Google Map</a>
@@ -553,7 +439,7 @@
                     <li><a href="#">Mumbai</a></li>
                     <li><a href="#">Pune</a></li>
                 </ul><br>
-                 
+
             </div>
 
             <div class="clear"></div>
@@ -580,23 +466,6 @@
         <div class="clear"></div>
     </div>
     <!-----footer----->
-
-    <script>
-        const openBtn = document.getElementById('openBtn');
-        const closeBtn = document.getElementById('closeBtn');
-        const formPanel = document.getElementById('formPanel');
-
-        openBtn.addEventListener('click', () => {
-            formPanel.classList.add('active');
-            openBtn.style.display = 'none';
-        });
-
-        closeBtn.addEventListener('click', () => {
-            formPanel.classList.remove('active');
-            openBtn.style.display = 'block';
-        });
-    </script>
-
     <script>
         const popupTriggerBtns = document.querySelectorAll('.popupTriggerBtn');
         const popupCloseBtn = document.getElementById('popupCloseBtn');
@@ -621,6 +490,7 @@
                 document.body.classList.remove('modal-open');
             }
         });
+
     </script>
 
     <script type="text/javascript" src="engine1/wowslider.js"></script>

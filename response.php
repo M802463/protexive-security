@@ -75,7 +75,7 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
             word-spacing: 3px;
             font-weight: 700;
-            color: #097174;
+            color: #025c89;
             width: 100%;
             margin: 0% !important;
         }
@@ -89,7 +89,7 @@
 
     <script>
         setTimeout(function () {
-            window.location.href = 'contact-us.html';
+            window.location.href = 'index.html';
         }, 10000);
     </script>
 
@@ -101,42 +101,44 @@
         <div class="popup-container" id="popupContainer">
             <button class="popup-close-btn" id="popupCloseBtn">&times;</button>
             <h2>Request A Quote</h2>
-             <form action="response.php" method="POST">
-                <div class="form-group">
-                    <input type="text" id="name" placeholder=" " required>
-                    <label for="name">Your Name</label>
-                </div>
+            <form action="response.php" method="POST">
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" "name="name" required />
+          <label for="name">Your Name</label>
+        </div>
 
-                <div class="form-group">
-                    <input type="text" id="subject" placeholder=" " required>
-                    <label for="subject">Enter Subject</label>
-                </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder=" " name="subject" required />
+          <label for="subject">Enter Subject</label>
+        </div>
 
-                <div class="form-group">
-                    <input type="email" id="email" placeholder=" ">
-                    <label for="email">Enter Email</label>
-                </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " name="email" />
+          <label for="email">Enter Email</label>
+        </div>
 
-                <div class="form-group">
-                    <input type="text" id="contact" placeholder=" ">
-                    <label for="contact">Enter contact number</label>
-                </div>
+        <div class="form-group">
+          <input type="text" id="contact" placeholder=" " name="contact" />
+          <label for="contact">Enter contact number</label>
+        </div>
 
-                <div class="form-group full-width">
-                    <textarea id="message" rows="5" placeholder=""></textarea>
-                    <label for="message">Enter Message</label>
-                </div>
-                <div class="radio-group full-width">
-                    <label><input type="radio" value="Sales Team" name="connect"> Sales Team</label>
-                    <label><input type="radio" value="HR Team for Job" name="connect"> HR Team for Job</label>
-                </div>
-                <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6LeeKaQrAAAAAEh5cGoOjW7gFPoalHDV7395qda6"></div>
-                </div>
+        <div class="form-group full-width">
+          <textarea id="message" rows="5" placeholder="" name="message"></textarea>
+          <label for="message">Enter Message</label>
+        </div>
+        <div class="radio-group full-width">
+          <label><input type="radio" value="Sales Team" name="team" /> Sales
+            Team</label>
+          <label><input type="radio" value="HR Team for Job" name="team" /> HR
+            Team for Job</label>
+        </div>
+        <div class="form-group">
+          <div class="g-recaptcha" data-sitekey="6LeeKaQrAAAAAEh5cGoOjW7gFPoalHDV7395qda6"></div>
+        </div>
 
-                <button type="submit">Submit</button>
-                <a href="tel:+918591456767" class="ctc"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Click to Call</a>
-            </form>
+        <button type="submit">Submit</button>
+        <a href="tel:+918591456767" class="ctc"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Click to Call</a>
+      </form>
         </div>
     </div>
 
@@ -238,7 +240,7 @@
                                 </li>
                                 <li><a href="operation.html">Operation</a></li>
                                 <li><a href="training.html">Training</a></li>
-                               
+                                <li><a href="clients.html">Clientele</a></li>
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -255,65 +257,82 @@
 
     <div class="thanks">
 
-        <?php
-        //Import PHPMailer classes into the global namespace
-        //These must be at the top of your script, not inside a function
-        
-        use PHPMailer\PHPMailer\PHPMailer;
-        use PHPMailer\PHPMailer\SMTP;
-        use PHPMailer\PHPMailer\Exception;
+      <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-        if ($_POST) {
-            $recaptcha = $_POST['g-recaptcha-response'];
+if ($_POST) {
+    $recaptcha = $_POST['g-recaptcha-response'];
 
-            // Validate with Google
-            $secret = '6LeeKaQrAAAAAMvPgeHF7Lq5pHkBI-FjupMjAa75';
-            $verify = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $recaptcha);
-            $response = json_decode($verify);
-            if ($response->success) {
+    // Validate reCAPTCHA via cURL
+    $secret = '6LeeKaQrAAAAAMvPgeHF7Lq5pHkBI-FjupMjAa75';
+    $verifyURL = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $recaptcha;
 
-                // Prepare the message
-                $msg = "";
-                $msg .= "Enquiry Form Details - OptiEco Infratech" . "<br>";
-                $msg .= "Full Name: " . $_POST["name"] . "<br>";
-                $msg .= "Subject: " . $_POST["subject"] . "<br>";
-                $msg .= "Email: " . $_POST["email"] . "<br>";
-                $msg .= "Contact: " . $_POST["contact"] . "<br>";
-                $msg .= "Message: " . $_POST["message"] . "<br>";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $verifyURL);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    $verify = curl_exec($ch);
+    curl_close($ch);
 
-                //Load Composer's autoloader
-                require 'PHPMailer/PHPMailer.php';
-                require 'PHPMailer/SMTP.php';
-                require 'PHPMailer/Exception.php';
-                // Send email
-        
-                $mail = new PHPMailer(true);
-                $mail->isSMTP();
-                $mail->Host = 'mail.protexivesecurity.com';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'sales@protexivesecurity.com';
-                $mail->Password = 'TnRpHK7@2Z';
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                $mail->Port = 587;
-                $mail->setFrom('sales@protexivesecurity.com', 'Protexive Security');
-                $mail->addAddress('sales@protexivesecurity.com');
-                $mail->isHTML(true);
-                $mail->Subject = 'Contact Form Details';
-                $mail->Body = $msg;
+    $response = json_decode($verify);
 
-                if ($mail->send()) {
-                    echo '<h2>Thank you for your Interest. we will be in touch shortly<h2>';
-                } else {
-                    echo '<h2>Message could not be sent</h2>';
-                }
-            } else {
-                echo '<h2>reCAPTCHA failed. Please try again</h2>';
-            }
+    if ($response && $response->success) {
+        // Prepare email content
+        $msg  = "Enquiry Form Details - Protexive Security Services<br>";
+        $msg .= "Full Name: " . $_POST["name"] . "<br>";
+        $msg .= "Subject: " . $_POST["subject"] . "<br>";
+        $msg .= "Email: " . $_POST["email"] . "<br>";
+        $msg .= "Contact: " . $_POST["contact"] . "<br>";
+        $msg .= "Message: " . $_POST["message"] . "<br>";
+        $msg .= "Team: " . $_POST["team"] . "<br>";
+
+        // Load PHPMailer
+        require 'PHPMailer/PHPMailer.php';
+        require 'PHPMailer/SMTP.php';
+        require 'PHPMailer/Exception.php';
+
+        $mail = new PHPMailer(true);
+
+        try {
+            $mail->isSMTP();
+            $mail->Host       = 'mail.protexivesecurity.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = '_mainaccount@protexivesecurity.com'; // fixed: removed tab
+            $mail->Password   = 'TnRpHK7@2Z';
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use implicit SSL
+            $mail->Port       = 465; // Matches ENCRYPTION_SMTPS
+
+            // SSL options (disable verification if testing)
+            $mail->SMTPOptions = [
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                    'allow_self_signed' => true
+                ]
+            ];
+
+            $mail->setFrom('sales@protexivesecurity.com', 'Protexive Security');
+            $mail->addAddress('sales@protexivesecurity.com');
+            $mail->isHTML(true);
+            $mail->Subject = 'Enquiry Form Details';
+            $mail->Body    = $msg;
+
+            $mail->send();
+            echo '<h2>Thank you for your Interest. We will be in touch shortly.</h2>';
+        } catch (Exception $e) {
+            echo '<h2>Message could not be sent. Mailer Error: ' . $mail->ErrorInfo . '</h2>';
         }
-        ?>
+    } else {
+        echo '<h2>reCAPTCHA failed. Please try again</h2>';
+    }
+}
+?>
+
     </div>
 
-      <!-------footer------>
+    <!-------footer------>
     <div class="col_sm1 hero5 footer_sp">
         <div class="footer_elem">
             <img src="images/footer-element-1.png" alt="" class="img">
@@ -421,7 +440,7 @@
                     <li><a href="#">Mumbai</a></li>
                     <li><a href="#">Pune</a></li>
                 </ul><br>
-                 
+
             </div>
 
             <div class="clear"></div>
