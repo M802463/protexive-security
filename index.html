@@ -120,7 +120,7 @@
                             class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/protexive-security-services-1502b220b/" class="link3"
+                    <a href="https://www.linkedin.com/company/protexivesecurityservices/" class="link3"
                         target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div class="whatsapp-icon top_flex2">
@@ -453,17 +453,7 @@
     <div class="top3">
       <div class="secur_ser_txt fadeinTop">
         <h2><i class="fa-solid fa-shield-halved"></i> Security Services</h2>
-        <p>
-          At Protexive Security Services, security isn’t just our business -
-          it’s our passion. Traditional manned guarding is no longer a
-          one-size-fits-all solution. The role and expectations of security
-          personnel have evolved significantly, often differing even within
-          the same organization. That’s why we tailor our security solutions
-          based on each client’s unique needs - considering factors such as
-          size, location, industry, and specific challenges. By understanding
-          these pain points, we deliver highly customized protection
-          strategies.
-        </p>
+      
       </div>
 
       <!-- <div class="security-services-card"> -->
@@ -616,17 +606,7 @@
         </div>
       </div>
 
-      <div class="secur_ser_txt fadein">
-        <br /><br />
-        <p>
-          Protexive Security Services provides security across all business
-          sectors throughout the year. Every business has distinct security
-          needs, which guide us in delivering tailored solutions. Trust us to
-          be your reliable security partner, ensuring the continuity and
-          safety of your operations.
-        </p>
-      </div>
-
+     
       <div class="owl-carousel client-carousel fadeinRight">
         <div class="card">
           <div class="image-container">
@@ -796,20 +776,7 @@
         <h3>Countrywide Facility</h3>
         <h2>Facility Management Service</h2>
       </div>
-      <div class="col_sm99 facility_management fadeinRight">
-        <p>
-          Protexive Facility Management services stand out due to our deep
-          understanding of each customer’s unique needs, combined with
-          extensive experience that has shaped our best practices. Our
-          Mumbai-based Facility Management Company offers comprehensive
-          services including Housekeeping, Office Boy, Pantry Boy, and Labour
-          Services. By choosing us, you gain access to a full range of
-          supporting services-such as facility and security management-all
-          conveniently provided under one roof. With a Single Point of Contact
-          (SPOC) for all your back-office requirements, you can relax and
-          confidently delegate every task to our capable team.
-        </p>
-      </div>
+      
       <div class="clear"></div>
 
       <div class="col_sm1 facility_flex">
@@ -1516,7 +1483,7 @@
               class="fa-brands fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
               class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/protexive-security-services-1502b220b/" class="link3" target="_blank"><i
+          <a href="https://www.linkedin.com/company/protexivesecurityservices/" class="link3" target="_blank"><i
               class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
@@ -1614,31 +1581,43 @@
     <div class="clear"></div>
   </div>
   <!-----footer----->
-  <script>
-    const popupTriggerBtns = document.querySelectorAll(".popupTriggerBtn");
-    const popupCloseBtn = document.getElementById("popupCloseBtn");
-    const popupBackdrop = document.getElementById("popupBackdrop");
-    const popupContainer = document.getElementById("popupContainer");
+ <script>
+    const popupTriggerBtns = document.querySelectorAll('.popupTriggerBtn');
+    const popupCloseBtn = document.getElementById('popupCloseBtn');
+    const popupBackdrop = document.getElementById('popupBackdrop');
+    const popupContainer = document.getElementById('popupContainer');
 
+    // Function to open popup
+    function openPopup() {
+        popupBackdrop.classList.add('active');
+        document.body.classList.add('modal-open');
+    }
+
+    // Function to close popup
+    function closePopup() {
+        popupBackdrop.classList.remove('active');
+        document.body.classList.remove('modal-open');
+    }
+
+    // Open popup on page load
+    window.addEventListener('load', openPopup);
+
+    // Open popup on any trigger button click
     popupTriggerBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        popupBackdrop.classList.add("active");
-        document.body.classList.add("modal-open");
-      });
+        btn.addEventListener('click', openPopup);
     });
 
-    popupCloseBtn.addEventListener("click", () => {
-      popupBackdrop.classList.remove("active");
-      document.body.classList.remove("modal-open");
-    });
+    // Close popup on close button click
+    popupCloseBtn.addEventListener('click', closePopup);
 
-    popupBackdrop.addEventListener("click", (e) => {
-      if (!popupContainer.contains(e.target)) {
-        popupBackdrop.classList.remove("active");
-        document.body.classList.remove("modal-open");
-      }
+    // Close popup if clicked outside the container
+    popupBackdrop.addEventListener('click', (e) => {
+        if (!popupContainer.contains(e.target)) {
+            closePopup();
+        }
     });
-  </script>
+</script>
+
 
   <script type="text/javascript" src="engine1/wowslider.js"></script>
   <script type="text/javascript" src="engine1/script.js"></script>

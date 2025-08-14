@@ -134,7 +134,7 @@
                             class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/protexive-security-services-1502b220b/" class="link3"
+                    <a href="https://www.linkedin.com/company/protexivesecurityservices/" class="link3"
                         target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div class="whatsapp-icon top_flex2">
@@ -705,7 +705,7 @@
                             class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/protexive-security-services-1502b220b/" class="link3"
+                    <a href="https://www.linkedin.com/company/protexivesecurityservices/" class="link3"
                         target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -814,31 +814,43 @@
         });
     </script>
 
-    <script>
-        const popupTriggerBtns = document.querySelectorAll('.popupTriggerBtn');
-        const popupCloseBtn = document.getElementById('popupCloseBtn');
-        const popupBackdrop = document.getElementById('popupBackdrop');
-        const popupContainer = document.getElementById('popupContainer');
+   <script>
+    const popupTriggerBtns = document.querySelectorAll('.popupTriggerBtn');
+    const popupCloseBtn = document.getElementById('popupCloseBtn');
+    const popupBackdrop = document.getElementById('popupBackdrop');
+    const popupContainer = document.getElementById('popupContainer');
 
-        popupTriggerBtns.forEach((btn) => {
-            btn.addEventListener('click', () => {
-                popupBackdrop.classList.add('active');
-                document.body.classList.add('modal-open');
-            });
-        });
+    // Function to open popup
+    function openPopup() {
+        popupBackdrop.classList.add('active');
+        document.body.classList.add('modal-open');
+    }
 
-        popupCloseBtn.addEventListener('click', () => {
-            popupBackdrop.classList.remove('active');
-            document.body.classList.remove('modal-open');
-        });
+    // Function to close popup
+    function closePopup() {
+        popupBackdrop.classList.remove('active');
+        document.body.classList.remove('modal-open');
+    }
 
-        popupBackdrop.addEventListener('click', (e) => {
-            if (!popupContainer.contains(e.target)) {
-                popupBackdrop.classList.remove('active');
-                document.body.classList.remove('modal-open');
-            }
-        });
-    </script>
+    // Open popup on page load
+    window.addEventListener('load', openPopup);
+
+    // Open popup on any trigger button click
+    popupTriggerBtns.forEach((btn) => {
+        btn.addEventListener('click', openPopup);
+    });
+
+    // Close popup on close button click
+    popupCloseBtn.addEventListener('click', closePopup);
+
+    // Close popup if clicked outside the container
+    popupBackdrop.addEventListener('click', (e) => {
+        if (!popupContainer.contains(e.target)) {
+            closePopup();
+        }
+    });
+</script>
+
 
     <script type="text/javascript" src="engine1/wowslider.js"></script>
     <script type="text/javascript" src="engine1/script.js"></script>
