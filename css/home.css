@@ -88,7 +88,7 @@ New Css Start
   padding: 0px 10px 0px 0px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 50px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1526,7 +1526,7 @@ New Css Start
 
 .top_contact>div:nth-child(1) {
   width: fit-content;
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
 }
 
 .top_contact>div {
@@ -2953,7 +2953,7 @@ ul {
 
 .faicon2 {
   color: #025c89;
-  font-size: 25px !important;
+  font-size: 40px !important;
 }
 
 .faicon {
