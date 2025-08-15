@@ -2145,7 +2145,7 @@ New Css Start
   background: transparent;
   color: #fff;
   margin-right: -40px !important;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   position: relative;
   border-right: 1px solid #fff;
   cursor: pointer;
@@ -3945,7 +3945,7 @@ Bullet
   margin-left: 22px;
 }
 
-.bullet ul li {}
+/* .bullet ul li {} */
 
 .bullet span {
   font-weight: 600;
