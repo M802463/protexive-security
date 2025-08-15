@@ -11,7 +11,7 @@
 	margin: 0px auto 0px;
 	/* text-align: left; */
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	/* justify-content: end; */
 }
 
@@ -193,14 +193,15 @@
     z-index: 11;
     font-family: "Montserrat", sans-serif;
     /* left: 9%; */
-    top: 0%;
+    /* top: 0%; */
     background: linear-gradient(166deg, #000000a8, transparent);
-    bottom: 10%;
+    /* bottom: 0%; */
+    height: 100%;
 }
 
 #wowslider-container1 .ws-title h2 {
     font-size: 2.7vw;
-    padding: 70px 0px 0;
+    padding: 3.5vw 0px 0;
     color: #fff;
     margin: 0;
     line-height: 120%;
@@ -214,8 +215,8 @@
 
 #wowslider-container1 .ws-title button {
 	outline: none !important;
-	padding: 14px 50px;
-	font-size: 16px;
+	padding: 1vw 3vw;
+	font-size: 1.1vw;
 	font-weight: 600;
 	line-height: 140%;
 	background: #d6253f;
@@ -529,21 +530,15 @@
 
 @media only screen and (max-width:1800px) {}
 
-@media only screen and (max-width:1400px) {
-	
-}
+@media only screen and (max-width:1400px) {}
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1200px) {}
 
-}
-
-@media only screen and (max-width:900px) {
-	
-}
+@media only screen and (max-width:900px) {}
 
 
 @media only screen and (max-width:700px) {
-	
+
 
 	#wowslider-container1 .ws-title>span>p>span {
 		font-size: 10px !important;

@@ -1583,34 +1583,34 @@
     </div>
     <!-----footer----->
     <script>
-        // const popupTriggerBtns = document.querySelectorAll(".popupTriggerBtn");
-        // const popupCloseBtn = document.getElementById("popupCloseBtn");
-        // const popupBackdrop = document.getElementById("popupBackdrop");
-        // const popupContainer = document.getElementById("popupContainer");
+        const popupTriggerBtns = document.querySelectorAll(".popupTriggerBtn");
+        const popupCloseBtn = document.getElementById("popupCloseBtn");
+        const popupBackdrop = document.getElementById("popupBackdrop");
+        const popupContainer = document.getElementById("popupContainer");
 
-        // function openPopup() {
-        //   popupBackdrop.classList.add("active");
-        //   document.body.classList.add("modal-open");
-        // }
+        function openPopup() {
+          popupBackdrop.classList.add("active");
+          document.body.classList.add("modal-open");
+        }
 
-        // function closePopup() {
-        //   popupBackdrop.classList.remove("active");
-        //   document.body.classList.remove("modal-open");
-        // }
+        function closePopup() {
+          popupBackdrop.classList.remove("active");
+          document.body.classList.remove("modal-open");
+        }
 
-        // window.addEventListener("load", openPopup);
+        window.addEventListener("load", openPopup);
 
-        // popupTriggerBtns.forEach((btn) => {
-        //   btn.addEventListener("click", openPopup);
-        // });
+        popupTriggerBtns.forEach((btn) => {
+          btn.addEventListener("click", openPopup);
+        });
 
-        // popupCloseBtn.addEventListener("click", closePopup);
+        popupCloseBtn.addEventListener("click", closePopup);
 
-        // popupBackdrop.addEventListener("click", (e) => {
-        //   if (!popupContainer.contains(e.target)) {
-        //     closePopup();
-        //   }
-        // });
+        popupBackdrop.addEventListener("click", (e) => {
+          if (!popupContainer.contains(e.target)) {
+            closePopup();
+          }
+        });
     </script>
 
     <script type="text/javascript" src="engine1/wowslider.js"></script>
