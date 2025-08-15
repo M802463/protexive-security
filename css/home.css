@@ -5157,6 +5157,16 @@ table th {
 }
 
 @media only screen and (max-width: 800px) {
+  .popup-container form {
+    display: flex;
+    grid-template-columns: unset;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .form-group {
+    width: 49%;
+}
+
   .hero1 {
     padding: 19% 0 10%;
   }
@@ -5331,9 +5341,23 @@ table th {
   .col_sm3_1 {
     width: 98%;
   }
+
+  .ctc {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
 }
 
 @media only screen and (max-width: 600px) {
+
+      .popup-container form {
+        display: block;
+    }
+        .form-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
   .logo_index1 {
     width: 100px !important;
   }
@@ -5466,7 +5490,7 @@ table th {
   }
 
   .popup-container form button {
-    width: 74%;
+    width: 100%;
   }
 }
 
