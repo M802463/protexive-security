@@ -188,24 +188,23 @@
 }
 
 #wowslider-container1 .ws-title {
-	position: absolute;
-	/* width: fit-content; */
-	z-index: 11;
-	font-family: "Montserrat", sans-serif;
-	/* left: 9%; */
-	top: 0%;
-	background: linear-gradient(166deg, #000000a8, transparent);
-	bottom: 10%;
-
+    position: absolute;
+    width: 48vw;
+    z-index: 11;
+    font-family: "Montserrat", sans-serif;
+    /* left: 9%; */
+    top: 0%;
+    background: linear-gradient(166deg, #000000a8, transparent);
+    bottom: 10%;
 }
 
 #wowslider-container1 .ws-title h2 {
-	font-size: 54px;
-	padding: 70px 81px 0 81px;
-	color: #fff;
-	margin: 0;
-	line-height: 120%;
-	font-weight: 600;
+    font-size: 2.7vw;
+    padding: 70px 0px 0;
+    color: #fff;
+    margin: 0;
+    line-height: 120%;
+    font-weight: 600;
 }
 
 #wowslider-container1 .ws-title hr {
@@ -531,29 +530,20 @@
 @media only screen and (max-width:1800px) {}
 
 @media only screen and (max-width:1400px) {
-	#wowslider-container1 .ws-title h2 {
-		font-size: 44px;
-	}
+	
 }
 
 @media only screen and (max-width:1200px) {
-	#wowslider-container1 .ws-title h2 {
-		font-size: 38px;
-	}
+
 }
 
 @media only screen and (max-width:900px) {
-	#wowslider-container1 .ws-title h2 {
-		font-size: 27px;
-		padding: 70px 30px 0 30px;
-	}
+	
 }
 
 
 @media only screen and (max-width:700px) {
-	#wowslider-container1 .ws-title span h2 {
-		font-size: 15px !important;
-	}
+	
 
 	#wowslider-container1 .ws-title>span>p>span {
 		font-size: 10px !important;
@@ -581,9 +571,6 @@
 @media only screen and (max-width:400px) {}
 
 @media only screen and (max-width:960px) {
-	#wowslider-container1 .ws-title {
-		font-size: 26px;
-	}
 
 	#wowslider-container1 .ws-title span button {
 		padding: 5px 23px;
@@ -591,15 +578,7 @@
 
 }
 
-@media only screen and (max-width:600px) {
-
-	#wowslider-container1 .ws-title {
-		left: 12%;
-		font-size: 20px;
-	}
-
-
-}
+@media only screen and (max-width:600px) {}
 
 
 @media only screen and (max-width:400px) {}

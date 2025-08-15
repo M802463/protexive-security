@@ -5235,10 +5235,6 @@ table th {
     width: 48%;
   }
 
-  #wowslider-container1 .ws-title {
-    max-width: 48vw !important;
-  }
-
   /* #wowslider-container1 .ws-title span h2 {
 		font-size: 27px !important;
 	} */
@@ -5500,10 +5496,6 @@ table th {
 
   .ftr_txt h1 {
     padding-bottom: 1%;
-  }
-
-  #wowslider-container1 .ws-title {
-    margin-top: 0%;
   }
 
   .popup-container h2 {
