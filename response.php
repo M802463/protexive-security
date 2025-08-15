@@ -154,19 +154,22 @@
                         <a href="index.html"><img src="images/logo.png" class="img" id="logo" /></a>
                     </div>
                     <div class="top_contact">
-                        <div>
-                            <div class="whatsapp-icon top_flex2">
-                                <a href="https://wa.me/+918591456767" target="_blank" rel="noopener noreferrer">
-                                    <img src="images/icon-whatsapp.webp" alt="" style="position: relative;left: -2px;">
-                                    whatsapp
-                                </a>
-                            </div>
-                            <div class="click-call top_flex2">
-                                <a href="tel:+918591456767" rel="noopener noreferrer">
-                                    <img src="images/click-to-call.webp" alt="" class="img">
-                                </a>
-                            </div>
-                        </div>
+                         <div>
+                <div class="whatsapp-icon top_flex2">
+                  <a
+                    href="https://wa.me/+918591456767"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+                <div class="top_flex2">
+                  <a href="tel:+918591456767" rel="noopener noreferrer">
+                    <i class="fa-solid fa-phone faicon2"></i>
+                  </a>
+                </div>
+              </div>
                         <div>
                             <div class="col_sm8">
                                 <i class="fa-solid fa-phone faicon"></i>

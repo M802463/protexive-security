@@ -103,43 +103,63 @@
         <button class="popup-close-btn" id="popupCloseBtn">&times;</button>
         <h2>Request A Quote</h2>
         <form action="response.php" method="POST">
-        <div class="form-group">
-          <input type="text" id="name" placeholder=" "name="name" required />
-          <label for="name">Your Name</label>
-        </div>
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " name="name" required />
+            <label for="name">Your Name</label>
+          </div>
 
-        <div class="form-group">
-          <input type="text" id="subject" placeholder=" " name="subject" required />
-          <label for="subject">Enter Subject</label>
-        </div>
+          <div class="form-group">
+            <input
+              type="text"
+              id="subject"
+              placeholder=" "
+              name="subject"
+              required
+            />
+            <label for="subject">Enter Subject</label>
+          </div>
 
-        <div class="form-group">
-          <input type="email" id="email" placeholder=" " name="email" />
-          <label for="email">Enter Email</label>
-        </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " name="email" />
+            <label for="email">Enter Email</label>
+          </div>
 
-        <div class="form-group">
-          <input type="text" id="contact" placeholder=" " name="contact" />
-          <label for="contact">Enter contact number</label>
-        </div>
+          <div class="form-group">
+            <input type="text" id="contact" placeholder=" " name="contact" />
+            <label for="contact">Enter contact number</label>
+          </div>
 
-        <div class="form-group full-width">
-          <textarea id="message" rows="5" placeholder="" name="message"></textarea>
-          <label for="message">Enter Message</label>
-        </div>
-        <div class="radio-group full-width">
-          <label><input type="radio" value="Sales Team" name="team" /> Sales
-            Team</label>
-          <label><input type="radio" value="HR Team for Job" name="team" /> HR
-            Team for Job</label>
-        </div>
-        <div class="form-group">
-          <div class="g-recaptcha" data-sitekey="6LeeKaQrAAAAAEh5cGoOjW7gFPoalHDV7395qda6"></div>
-        </div>
+          <div class="form-group full-width">
+            <textarea
+              id="message"
+              rows="5"
+              placeholder=""
+              name="message"
+            ></textarea>
+            <label for="message">Enter Message</label>
+          </div>
+          <div class="radio-group full-width">
+            <label
+              ><input type="radio" value="Sales Team" name="team" /> Sales
+              Team</label
+            >
+            <label
+              ><input type="radio" value="HR Team for Job" name="team" /> HR
+              Team for Job</label
+            >
+          </div>
+          <div class="form-group">
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LeeKaQrAAAAAEh5cGoOjW7gFPoalHDV7395qda6"
+            ></div>
+          </div>
 
-        <button type="submit">Submit</button>
-        <a href="tel:+918591456767" class="ctc"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Click to Call</a>
-      </form>
+          <button type="submit">Submit</button>
+          <a href="tel:+918591456767" class="ctc"
+            ><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Click to Call</a
+          >
+        </form>
       </div>
     </div>
 
@@ -194,17 +214,12 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
-                      src="images/icon-whatsapp.webp"
-                      alt=""
-                      style="position: relative; left: -2px"
-                    />
-                    whatsapp
+                    <i class="fa-brands fa-whatsapp"></i>
                   </a>
                 </div>
-                <div class="click-call top_flex2">
+                <div class="top_flex2">
                   <a href="tel:+918591456767" rel="noopener noreferrer">
-                    <img src="images/click-to-call.webp" alt="" class="img" />
+                    <i class="fa-solid fa-phone faicon2"></i>
                   </a>
                 </div>
               </div>
@@ -327,7 +342,7 @@
                   </li>
                   <li><a href="operation.html">Operation</a></li>
                   <li><a href="training.html">Training</a></li>
-<li><a href="clients.html">Clientele</a></li>
+                  <li><a href="clients.html">Clientele</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
               </div>
@@ -525,6 +540,31 @@
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
           </div>
+          <div
+            style="
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 10px;
+              width: 200px;
+              margin-top: 10px;
+            "
+            class="cert-img"
+          >
+            <img
+              src="images/capsi-img.png"
+              alt=""
+              style="width: 100%; height: auto"
+            />
+            <img
+              src="images/jas-anz-img.jpg"
+              alt=""
+              style="width: 100%; height: auto"
+            />
+            <img
+              src="images/spaarta-img.jpg"
+              alt=""
+              style="width: 100%; height: auto"
+            />
+          </div>
         </div>
 
         <div class="col_sm5_footer2 bullet ftr_txt">
@@ -639,43 +679,42 @@
       });
     </script>
 
-   <script>
-    const popupTriggerBtns = document.querySelectorAll('.popupTriggerBtn');
-    const popupCloseBtn = document.getElementById('popupCloseBtn');
-    const popupBackdrop = document.getElementById('popupBackdrop');
-    const popupContainer = document.getElementById('popupContainer');
+    <script>
+      const popupTriggerBtns = document.querySelectorAll(".popupTriggerBtn");
+      const popupCloseBtn = document.getElementById("popupCloseBtn");
+      const popupBackdrop = document.getElementById("popupBackdrop");
+      const popupContainer = document.getElementById("popupContainer");
 
-    // Function to open popup
-    function openPopup() {
-        popupBackdrop.classList.add('active');
-        document.body.classList.add('modal-open');
-    }
+      // Function to open popup
+      function openPopup() {
+        popupBackdrop.classList.add("active");
+        document.body.classList.add("modal-open");
+      }
 
-    // Function to close popup
-    function closePopup() {
-        popupBackdrop.classList.remove('active');
-        document.body.classList.remove('modal-open');
-    }
+      // Function to close popup
+      function closePopup() {
+        popupBackdrop.classList.remove("active");
+        document.body.classList.remove("modal-open");
+      }
 
-    // Open popup on page load
-    window.addEventListener('load', openPopup);
+      // Open popup on page load
+      window.addEventListener("load", openPopup);
 
-    // Open popup on any trigger button click
-    popupTriggerBtns.forEach((btn) => {
-        btn.addEventListener('click', openPopup);
-    });
+      // Open popup on any trigger button click
+      popupTriggerBtns.forEach((btn) => {
+        btn.addEventListener("click", openPopup);
+      });
 
-    // Close popup on close button click
-    popupCloseBtn.addEventListener('click', closePopup);
+      // Close popup on close button click
+      popupCloseBtn.addEventListener("click", closePopup);
 
-    // Close popup if clicked outside the container
-    popupBackdrop.addEventListener('click', (e) => {
+      // Close popup if clicked outside the container
+      popupBackdrop.addEventListener("click", (e) => {
         if (!popupContainer.contains(e.target)) {
-            closePopup();
+          closePopup();
         }
-    });
-</script>
-
+      });
+    </script>
 
     <script type="text/javascript" src="engine1/wowslider.js"></script>
     <script type="text/javascript" src="engine1/script.js"></script>

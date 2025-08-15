@@ -72,7 +72,6 @@ New Css Start
   width: fit-content;
   padding: 0% 0px;
   float: right;
-  margin-right: 10px;
 }
 
 .whatsapp-icon>a {
@@ -83,13 +82,13 @@ New Css Start
   position: relative;
   height: 33px;
   text-decoration: none;
-  color: #fff;
-  background-color: #2bab1c;
+  color: #2bab1c;
+  /* background-color: #2bab1c; */
   border-radius: 50px;
   padding: 0px 10px 0px 0px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 23px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -294,6 +293,10 @@ New Css Start
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.cert-img {
+  display: none;
 }
 
 .card_bullet3 ul li {
@@ -2948,6 +2951,11 @@ ul {
   margin: 0% 0% 3% !important;
 }
 
+.faicon2 {
+  color: #025c89;
+  font-size: 20px !important;
+}
+
 .faicon {
   color: #ffffff;
   font-size: 18px !important;
@@ -3245,7 +3253,7 @@ home page
 }
 
 .logo {
-  width: 240px;
+  width: 300;
   margin: 1.5% 0%;
   float: left;
   transition: all 0.4s linear;
@@ -5111,7 +5119,8 @@ table th {
   }
 
   .top_contact>div:nth-child(1) {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   .top_contact>div:nth-child(2) {
@@ -5162,131 +5171,135 @@ table th {
     display: none;
   }
 
-.footer_elem {
-  display: none;
-}
+  .cert-img {
+    display: grid;
+  }
 
-.popup-container form {
-  display: flex;
-  grid-template-columns: unset;
-  gap: 5px;
-  flex-wrap: wrap;
-}
+  .footer_elem {
+    display: none;
+  }
 
-.form-group {
-  width: 49%;
-}
+  .popup-container form {
+    display: flex;
+    grid-template-columns: unset;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
 
-.hero1 {
-  padding: 19% 0 10%;
-}
+  .form-group {
+    width: 49%;
+  }
 
-.common_footer_tags li a {
-  min-width: 368px;
-}
+  .hero1 {
+    padding: 19% 0 10%;
+  }
 
-.count_bg {
-  gap: 20px;
-  justify-content: center;
-}
+  .common_footer_tags li a {
+    min-width: 368px;
+  }
 
-.count_bg>div:nth-child(2) {
-  width: fit-content;
-}
+  .count_bg {
+    gap: 20px;
+    justify-content: center;
+  }
 
-.count_bg>div:nth-child(1) {
-  width: 20%;
-}
+  .count_bg>div:nth-child(2) {
+    width: fit-content;
+  }
 
-.col_sm5 {
-  width: 98%;
-}
+  .count_bg>div:nth-child(1) {
+    width: 20%;
+  }
 
-.count-flex {
-  gap: 104px;
-}
+  .col_sm5 {
+    width: 98%;
+  }
 
-.res_wek {
-  min-height: 900px;
-}
+  .count-flex {
+    gap: 104px;
+  }
 
-.bullet5 ul li {
-  width: 50%;
-}
+  .res_wek {
+    min-height: 900px;
+  }
 
-.bullet3 ul li {
-  width: 50%;
-}
+  .bullet5 ul li {
+    width: 50%;
+  }
 
-.col_sm4 {
-  width: 48%;
-}
+  .bullet3 ul li {
+    width: 50%;
+  }
 
-#wowslider-container1 .ws-title {
-  max-width: 48vw !important;
-}
+  .col_sm4 {
+    width: 48%;
+  }
 
-/* #wowslider-container1 .ws-title span h2 {
+  #wowslider-container1 .ws-title {
+    max-width: 48vw !important;
+  }
+
+  /* #wowslider-container1 .ws-title span h2 {
 		font-size: 27px !important;
 	} */
 
-.testi h2 {
-  font-size: 13px;
-}
+  .testi h2 {
+    font-size: 13px;
+  }
 
-.col_sm55 {
-  width: 34%;
-}
+  .col_sm55 {
+    width: 34%;
+  }
 
-.responsive-accordion-default.responsive-accordion li .responsive-accordion-head i {
-  top: 11px !important;
-}
+  .responsive-accordion-default.responsive-accordion li .responsive-accordion-head i {
+    top: 11px !important;
+  }
 
-.col_sm2_1 {
-  width: 98%;
-}
+  .col_sm2_1 {
+    width: 98%;
+  }
 
-/* .col_sm11 {
+  /* .col_sm11 {
 		width: 94%;
 	} */
 
-.col_sm111 {
-  width: 98%;
-}
+  .col_sm111 {
+    width: 98%;
+  }
 
-.col_sm777 {
-  width: 98%;
-}
+  .col_sm777 {
+    width: 98%;
+  }
 
-.col_sm77 {
-  width: 50%;
-}
+  .col_sm77 {
+    width: 50%;
+  }
 
-.col_ms33 {
-  width: 98%;
-  margin: 1%;
-}
+  .col_ms33 {
+    width: 98%;
+    margin: 1%;
+  }
 
-.featu_txt {
-  min-height: 389px;
-}
+  .featu_txt {
+    min-height: 389px;
+  }
 
-.col_sm33 {
-  width: 100%;
-  margin: 1% 0%;
-}
+  .col_sm33 {
+    width: 100%;
+    margin: 1% 0%;
+  }
 
-.ftr_txt h1 {
-  padding-bottom: 1%;
-}
+  .ftr_txt h1 {
+    padding-bottom: 1%;
+  }
 
-.col_sm2 {
-  width: 98%;
-}
+  .col_sm2 {
+    width: 98%;
+  }
 
-.ftr_right {
-  text-align: left;
-}
+  .ftr_right {
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -5631,12 +5644,8 @@ table th {
 
   .top_contact>div:nth-child(1) {
     display: flex;
-    gap: 0;
+    gap: 1;
     flex-direction: row-reverse;
-  }
-
-  .whatsapp-icon {
-    margin-right: 0px;
   }
 
   .hero5 {
@@ -5648,10 +5657,7 @@ table th {
     gap: 20px;
   }
 
-  .whatsapp-icon>a {
-    height: 29px;
-    font-size: 8px;
-  }
+
 
   .click-call {
     width: 55px;
