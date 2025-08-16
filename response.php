@@ -97,50 +97,7 @@
 
 <body class="b-clr">
 
-    <div class="popup-backdrop" id="popupBackdrop">
-        <div class="popup-container" id="popupContainer">
-            <button class="popup-close-btn" id="popupCloseBtn">&times;</button>
-            <h2>Request A Quote</h2>
-            <form action="response.php" method="POST">
-        <div class="form-group">
-          <input type="text" id="name" placeholder=" "name="name" required />
-          <label for="name">Your Name</label>
-        </div>
 
-        <div class="form-group">
-          <input type="text" id="subject" placeholder=" " name="subject" required />
-          <label for="subject">Enter Subject</label>
-        </div>
-
-        <div class="form-group">
-          <input type="email" id="email" placeholder=" " name="email" />
-          <label for="email">Enter Email</label>
-        </div>
-
-        <div class="form-group">
-          <input type="text" id="contact" placeholder=" " name="contact" />
-          <label for="contact">Enter contact number</label>
-        </div>
-
-        <div class="form-group full-width">
-          <textarea id="message" rows="5" placeholder="" name="message"></textarea>
-          <label for="message">Enter Message</label>
-        </div>
-        <div class="radio-group full-width">
-          <label><input type="radio" value="Sales Team" name="team" /> Sales
-            Team</label>
-          <label><input type="radio" value="HR Team for Job" name="team" /> HR
-            Team for Job</label>
-        </div>
-        <div class="form-group">
-          <div class="g-recaptcha" data-sitekey="6LeeKaQrAAAAAEh5cGoOjW7gFPoalHDV7395qda6"></div>
-        </div>
-
-        <button type="submit">Submit</button>
-        <a href="tel:+918591456767" class="ctc"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Click to Call</a>
-      </form>
-        </div>
-    </div>
 
     <div class="top_arrow">
         <i class="fa-solid fa-arrow-up"></i>
