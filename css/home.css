@@ -88,7 +88,7 @@ New Css Start
   padding: 0px 10px 0px 0px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 55px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1121,7 +1121,7 @@ New Css Start
   font-size: 16px;
   font-weight: 700;
   line-height: 140%;
-  color: #000000;
+  color: #d6253f;
   margin: 0% 0 0% !important;
 }
 
@@ -1242,7 +1242,7 @@ New Css Start
 
 .button {
   display: inline-block;
-  color: #025c89;
+  color: #d6253f;
   font-weight: bold;
   text-decoration: none;
   font-size: 14px;
@@ -2910,7 +2910,7 @@ ul {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: rgb(7 110 180);
+  color: #d6253f;
   line-height: 140%;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -2923,7 +2923,7 @@ ul {
   content: "";
   width: 8px;
   height: 3px;
-  background-color: #0c3eb4;
+  background-color: #d6253f;
   position: absolute;
   right: -29px;
   top: 45%;
@@ -2934,7 +2934,7 @@ ul {
   content: "";
   width: 16px;
   height: 3px;
-  background-color: #0c3eb4;
+  background-color: #d6253f;
   position: absolute;
   right: -55px;
   top: 45%;
@@ -2951,9 +2951,14 @@ ul {
   margin: 0% 0% 3% !important;
 }
 
+.icon-gap {
+  gap: 13px !important;
+}
+
 .faicon2 {
   color: #025c89;
-  font-size: 40px !important;
+  font-size: 45px !important;
+  margin-right: 10px;
 }
 
 .faicon {
@@ -3686,7 +3691,7 @@ extra
   background-position: top;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  padding: 2% 0 4%;
+  padding: 2% 0 2%;
   background-color: #f9f9f9;
 }
 
@@ -4773,7 +4778,7 @@ table th {
     padding: 0.24% 0% !important;
   }
 
-  
+
 
   #cssmenu>ul>li.has-sub>a:before {
     right: -5px !important;
@@ -4923,10 +4928,10 @@ table th {
     right: 3%;
   }
 
-  .res_wek {
+  /* .res_wek {
     min-height: 600px;
     width: 98%;
-  }
+  } */
 
   .dis_mob {
     display: block;
@@ -5214,9 +5219,9 @@ table th {
     gap: 104px;
   }
 
-  .res_wek {
+  /* .res_wek {
     min-height: 900px;
-  }
+  } */
 
   .bullet5 ul li {
     width: 50%;
@@ -5422,9 +5427,10 @@ table th {
     position: static;
   }
 
+  /* 
   .res_wek {
     min-height: auto;
-  }
+  } */
 
   .play_btn {
     width: 45px;
