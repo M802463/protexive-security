@@ -4652,9 +4652,6 @@ table th {
     padding: 1.61% 0%;
   }
 
-  #wowslider-container1 .ws-title span h2 {
-    font-size: 51px !important;
-  }
 
   .banner-text h1 {
     top: 130px;
@@ -4776,9 +4773,7 @@ table th {
     padding: 0.24% 0% !important;
   }
 
-  #wowslider-container1 .ws-title span h2 {
-    font-size: 32px !important;
-  }
+  
 
   #cssmenu>ul>li.has-sub>a:before {
     right: -5px !important;
@@ -5556,10 +5551,6 @@ table th {
 
   .inner_banner_txt h3 a {
     font-size: 9px;
-  }
-
-  #wowslider-container1 .ws-title span h2 {
-    font-size: 16px !important;
   }
 
   .wel_txt h3 {
