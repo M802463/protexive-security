@@ -875,12 +875,12 @@ New Css Start
 }
 
 .footer_elem {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  opacity: 0.03;
-  filter: hue-rotate(191deg) invert(1);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    opacity: 0.03;
+    filter: hue-rotate(191deg) invert(1);
 }
 
 .play_annime {

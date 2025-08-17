@@ -188,19 +188,19 @@
 }
 
 #wowslider-container1 .ws-title {
-	position: absolute;
-	width: 48vw;
-	z-index: 11;
-	font-family: "Montserrat", sans-serif;
-	/* left: 9%; */
-	/* top: 0%; */
-	background: linear-gradient(209deg, transparent 29%, #00000080 93%) !important;
-	/* background: linear-gradient(166deg, #000000a8, transparent); */
-	/* bottom: 0%; */
-	height: 100%;
-	padding: 0 4vw 0vw;
-	display: inline-flex;
-	align-items: end;
+    position: absolute;
+    width: 48vw;
+    z-index: 11;
+    font-family: "Montserrat", sans-serif;
+    /* left: 9%; */
+    /* top: 0%; */
+    background: linear-gradient(180deg, #00000000 57%, #000000bf 63%) !important;
+    /* bottom: 0%; */
+    height: 100%;
+    padding: 0 4vw 0vw;
+    display: inline-flex
+;
+    align-items: end;
 }
 
 #wowslider-container1 .ws-title h2 {
@@ -556,6 +556,9 @@
 
 @media only screen and (max-width:700px) {
 
+	#wowslider-container1 .ws-title a {
+    margin: 15px auto 13px;
+	}
 
 	#wowslider-container1 .ws-title>span>p>span {
 		font-size: 10px !important;
@@ -571,6 +574,12 @@
 	}
 
 }
+@media only screen and (max-width:500px) {
+
+    #wowslider-container1 .ws-title a {
+        margin: 8px auto 10px;
+    }
+}
 
 @media only screen and (max-width:320px) {
 
@@ -580,7 +589,6 @@
 	}
 }
 
-@media only screen and (max-width:400px) {}
 
 @media only screen and (max-width:960px) {}
 

@@ -344,6 +344,7 @@ if ($_POST) {
 
           <br /><br />
 
+<<<<<<< Updated upstream
           <div
             style="
               grid-template-columns: 1fr 1fr 1fr;
@@ -369,6 +370,74 @@ if ($_POST) {
               style="width: 100%; height: auto"
             />
           </div>
+=======
+            <div class="col_sm5_footer2 bullet ftr_txt">
+                <h2>Security <span>Services</span></h2>
+                <ul>
+                    <li><a href="security-guard.html">Security Guard</a></li>
+                    <li><a href="bouncer-bodyguard.html">Bouncer and Bodyguard</a></li>
+                    <li><a href="escort-guard.html">Escort Guard</a></li>
+                    <li><a href="female-security-guard.html">Female Security Guard</a></li>
+                    <li><a href="cash-management.html">Cash Management</a></li>
+                    <li><a href="dog-squads-service.html">Dog Squads
+                            Service</a></li>
+                    <li><a href="event-security.html">Event Security</a></li>
+                    <li><a href="tourist-security.html">Tourist Security</a></li>
+                    <li><a href="office-security.html">Office Security</a></li>
+                    <li><a href="building-security.html">Building Security</a></li>
+                    <li><a href="bank-security.html">Bank Security</a></li>
+                    <li><a href="industrial-security.html">Industrial Security</a></li>
+                    <li><a href="retail-security.html">Retail Security</a></li>
+                    <li><a href="hospital-security.html">Hospital Security</a></li>
+                    <li><a href="property-security.html">Property Security</a></li>
+                    <li><a href="school-security.html">School Security</a></li>
+                </ul>
+            </div>
+
+            <div class="col_sm5_footer2 bullet ftr_txt">
+                <h2>Quick <span>Links</span></h2>
+                <ul>
+            <li><a href="why-us.html">Why Us</a></li>
+            <li><a href="operation.html">Operation</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul><br>
+                <h2>Facility <span>Service</span></h2>
+                <ul>
+                    <li><a href="housekeeping-service.html">Housekeeping Service</a></li>
+                    <li><a href="office-boy-pantry-boy.html">Office Boy & Pantry Boy</a></li>
+                </ul><br>
+                <h2>Manpower <span>Services</span></h2>
+                <ul>
+                    <li><a href="front-back-office-manpower.html">Front &amp; Back Office
+                            Manpower</a></li>
+                    <li><a href="temp-staffing.html">Temp Staffing</a>
+                    </li>
+                    <li><a href="event-staff.html">Event Staff</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col_sm5_footer2 bullet ftr_txt">
+                <h2>Contact <span>Us</span></h2>
+                <ul>
+                    <li><a href="#">Ahmedabad</a></li>
+                    <li><a href="#">Bengaluru</a></li>
+                    <li><a href="#">Chennai</a></li>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Lucknow</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Pune</a></li>
+                </ul><br>
+
+            </div>
+
+            <div class="clear"></div>
+>>>>>>> Stashed changes
         </div>
 
        <div class="col_sm5_footer2 bullet ftr_txt">
