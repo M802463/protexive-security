@@ -301,118 +301,215 @@ if ($_POST) {
 
     <!-------footer------>
     <div class="col_sm1 hero5 footer_sp">
-        <div class="footer_elem">
-            <img src="images/footer-element-1.png" alt="" class="img">
-        </div>
-        <br>
-        <div class="top3">
-            <div class="col_sm5_footer ftr_txt">
-                <div class="footer_logo">
-                    <img src="images/footer-logo.png" alt="" class="img">
-                </div>
-                <p>Today, we are a market leader thanks to our team's professionalism, innovative solutions, timely
-                    execution, wide spectrum of services and our keeping updated with the times. </p>
+      <div class="footer_elem">
+        <img src="images/footer-element-1.png" alt="" class="img" />
+      </div>
+      <br />
+      <div class="top3">
+        <div class="col_sm5_footer ftr_txt">
+          <div class="footer_logo">
+            <img src="images/footer-logo.png" alt="" class="img" />
+          </div>
+          <p>
+            Today, we are a market leader thanks to our team's professionalism,
+            innovative solutions, timely execution, wide spectrum of services
+            and our keeping updated with the times.
+          </p>
 
-                <h3>Head <span>Office</span></h3>
-                <i class="fa-solid fa-location-arrow footer_icon"></i>
-                <p>
-                    <strong>Protexive Security Services</strong> <br>
-                    Kris Korner Commercial Plaza, 2nd Floor, <br>
-                    Shop No.25, Opp Sarswati Vidyalaya, <br>
-                    Kavesar, G.B.Road, Thane (W)- 400615. <br>
-                </p><br>
+          <h3>Head <span>Office</span></h3>
+          <i class="fa-solid fa-location-arrow footer_icon"></i>
+          <p>
+            <strong>Protexive Security Services</strong> <br />
+            Kris Korner Commercial Plaza, 2nd Floor, <br />
+            Shop No.25, Opp Sarswati Vidyalaya, <br />
+            Kavesar, G.B.Road, Thane (W)- 400615. <br />
+          </p>
+          <br />
 
-                <!-- <i class="fa-solid fa-phone footer_icon"></i>
+          <!-- <i class="fa-solid fa-phone footer_icon"></i>
                 <a href="tel:02245165550" class="link2">022-4516 5550</a><br><br> -->
 
-                <i class="fa-solid fa-phone footer_icon"></i>
-                <a href="tel:+918591456767" class="link2">+91 85914 56767</a><br><br>
+          <i class="fa-solid fa-phone footer_icon"></i>
+          <a href="tel:+918591456767" class="link2">+91 85914 56767</a
+          ><br /><br />
 
-                <i class="fa-solid fa-envelope footer_icon"></i>
-                <a href="mailto:sales@protexivesecurity.com" class="link2">sales@protexivesecurity.com</a><br><br>
-                <i class="fa-solid fa-envelope footer_icon"></i>
-                <a href="mailto:operations@protexivesecurity.com"
-                    class="link2">operations@protexivesecurity.com</a><br><br>
+          <i class="fa-solid fa-envelope footer_icon"></i>
+          <a href="mailto:sales@protexivesecurity.com" class="link2"
+            >sales@protexivesecurity.com</a
+          ><br /><br />
+          <i class="fa-solid fa-envelope footer_icon"></i>
+          <a href="mailto:operations@protexivesecurity.com" class="link2"
+            >operations@protexivesecurity.com</a
+          ><br /><br />
 
-                <i class="fa-solid fa-map-location-dot footer_icon"></i>
-                <a href="https://maps.app.goo.gl/rmpyJ7F6cq3yoApx5" target="_blank" class="link2">Google Map</a>
-                <br><br>
-                <div class="top_social">
-                    <a href="https://www.facebook.com/Protexive/" class="link3" target="_blank"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/protexivesecurityservices/" class="link3"
-                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-            </div>
+          <br /><br />
 
-            <div class="col_sm5_footer2 bullet ftr_txt">
-                <h2>Security <span>Services</span></h2>
-                <ul>
-                    <li><a href="security-guard.html">Security Guard</a></li>
-                    <li><a href="bouncer-bodyguard.html">Bouncer and Bodyguard</a></li>
-                    <li><a href="escort-guard.html">Escort Guard</a></li>
-                    <li><a href="female-security-guard.html">Female Security Guard</a></li>
-                    <li><a href="dog-squads-service.html">Dog Squads
-                            Service</a></li>
-                    <li><a href="event-security.html">Event Security</a></li>
-                    <li><a href="tourist-security.html">Tourist Security</a></li>
-                    <li><a href="office-security.html">Office Security</a></li>
-                    <li><a href="building-security.html">Building Security</a></li>
-                    <li><a href="bank-security.html">Bank Security</a></li>
-                    <li><a href="industrial-security.html">Industrial Security</a></li>
-                    <li><a href="retail-security.html">Retail Security</a></li>
-                    <li><a href="hospital-security.html">Hospital Security</a></li>
-                    <li><a href="property-security.html">Property Security</a></li>
-                    <li><a href="school-security.html">School Security</a></li>
-                </ul>
-            </div>
-
-            <div class="col_sm5_footer2 bullet ftr_txt">
-                <h2>Quick <span>Links</span></h2>
-                <ul>
-                    <li><a href="operation.html">Operation</a></li>
-                    <li><a href="training.html">Training</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                </ul><br>
-                <h2>Facility <span>Service</span></h2>
-                <ul>
-                    <li><a href="housekeeping-service.html">Housekeeping Service</a></li>
-                    <li><a href="office-boy-pantry-boy.html">Office Boy & Pantry Boy</a></li>
-                </ul><br>
-                <h2>Manpower <span>Services</span></h2>
-                <ul>
-                    <li><a href="front-back-office-manpower.html">Front &amp; Back Office
-                            Manpower</a></li>
-                    <li><a href="temp-staffing.html">Temp Staffing</a>
-                    </li>
-                    <li><a href="event-staff.html">Event Staff</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col_sm5_footer2 bullet ftr_txt">
-                <h2>Contact <span>Us</span></h2>
-                <ul>
-                    <li><a href="#">Ahmedabad</a></li>
-                    <li><a href="#">Bengaluru</a></li>
-                    <li><a href="#">Chennai</a></li>
-                    <li><a href="#">Delhi</a></li>
-                    <li><a href="#">Hyderabad</a></li>
-                    <li><a href="#">Lucknow</a></li>
-                    <li><a href="#">Mumbai</a></li>
-                    <li><a href="#">Pune</a></li>
-                </ul><br>
-
-            </div>
-
-            <div class="clear"></div>
+          <div
+            style="
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 10px;
+              width: 200px;
+              margin-top: 10px;
+            "
+            class="cert-img"
+          >
+            <img
+              src="images/capsi-img.png"
+              alt=""
+              style="width: 100%; height: auto"
+            />
+            <img
+              src="images/jas-anz-img.jpg"
+              alt=""
+              style="width: 100%; height: auto"
+            />
+            <img
+              src="images/spaarta-img.jpg"
+              alt=""
+              style="width: 100%; height: auto"
+            />
+          </div>
         </div>
+
+       <div class="col_sm5_footer2 bullet ftr_txt">
+          <h2>Security <span>Services</span></h2>
+          <ul>
+            <li><a href="security-guard.html">Security Guard</a></li>
+            <li><a href="bouncer-bodyguard.html">Bouncer and Bodyguard</a></li>
+            <li><a href="escort-guard.html">Escort Guard</a></li>
+            <li>
+              <a href="female-security-guard.html">Female Security Guard</a>
+            </li>
+            <li><a href="cash-management.html">Cash Management</a></li>
+            <li><a href="dog-squads-service.html">Dog Squads Service</a></li>
+            <li><a href="event-security.html">Event Security</a></li>
+            <li><a href="tourist-security.html">Tourist Security</a></li>
+            <li><a href="office-security.html">Office Security</a></li>
+            <li><a href="building-security.html">Building Security</a></li>
+            <li><a href="bank-security.html">Bank Security</a></li>
+            <li><a href="industrial-security.html">Industrial Security</a></li>
+            <li><a href="retail-security.html">Retail Security</a></li>
+            <li><a href="hospital-security.html">Hospital Security</a></li>
+            <li><a href="property-security.html">Property Security</a></li>
+            <li><a href="school-security.html">School Security</a></li>
+          </ul>
+        </div>
+
+        <div class="col_sm5_footer2 bullet ftr_txt">
+          <h2>Quick <span>Links</span></h2>
+          <ul>
+            <li><a href="operation.html">Operation</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+          <br />
+          <h2>Facility <span>Service</span></h2>
+          <ul>
+            <li>
+              <a href="housekeeping-service.html">Housekeeping Service</a>
+            </li>
+            <li>
+              <a href="office-boy-pantry-boy.html">Office Boy & Pantry Boy</a>
+            </li>
+          </ul>
+          <br />
+          <h2>Manpower <span>Services</span></h2>
+          <ul>
+            <li>
+              <a href="front-back-office-manpower.html"
+                >Front &amp; Back Office Manpower</a
+              >
+            </li>
+            <li><a href="temp-staffing.html">Temp Staffing</a></li>
+            <li><a href="event-staff.html">Event Staff</a></li>
+          </ul>
+        </div>
+
+        <div class="col_sm5_footer2 bullet ftr_txt">
+          <h2>Contact <span>Us</span></h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d240996.53961673414!2d72.858413!3d19.3010165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bbec09f361ab%3A0xa2c61c2474908700!2sPROTEXIVE%20SECURITY%20SERVICES!5e0!3m2!1sen!2sin!4v1755408835364!5m2!1sen!2sin"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br />
+          <div class="top_social">
+            <a
+              href="https://www.facebook.com/Protexive/"
+              class="link3"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/protexivesecurityservices/"
+              class="link3"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/protexivesecurityservices/"
+              class="link3"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
         <div class="clear"></div>
+        <div class="col_sm1 bullet ftr_txt2">
+          <h2>Contact <span>Us</span></h2>
+          <div class="inline-city-links">
+            <a class="pdng-left" href="#">Ahmedabad</a> |
+            <a href="#">Bengaluru</a> | <a href="#">Chennai</a> |
+            <a href="#">Delhi</a> | <a href="#">Hyderabad</a> |
+            <a href="#">Lucknow</a> | <a href="#">Mumbai</a> |
+            <a href="#">Pune</a>
+          </div>
+          <style>
+            .ftr_txt2 {
+              color: #fff;
+            }
+            .pdng-left {
+              padding-left: 0 !important;
+            }
+            .ftr_txt2 h2 {
+              font-family: "Montserrat", sans-serif;
+              font-size: 22px;
+              font-weight: 600;
+              margin: 0% 0% 1% 0%;
+              color: #fff;
+              position: relative;
+              text-align: left;
+            }
+            .ftr_txt2 h2 span {
+              color: #025c89;
+            }
+            .inline-city-links {
+              margin: 10px 0;
+              line-height: 1.6;
+            }
+            .inline-city-links a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 16px;
+              padding: 0 15px;
+            }
+            @media screen and (max-width: 990px) {
+              .pdng-left {
+                padding-left: 15px !important;
+              }
+            }
+          </style>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
 
     <div class="col_sm1 bg_clr1">

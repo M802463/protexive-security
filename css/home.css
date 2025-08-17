@@ -1248,6 +1248,14 @@ New Css Start
   font-size: 14px;
 }
 
+.clients_border {
+  border: 1px solid #ddd;
+}
+
+.title {
+  color: #d6253f !important;
+}
+
 .button span {
   margin-left: 5px;
 }
@@ -2526,10 +2534,10 @@ New Css Start
 .fa-x-twitter,
 .fa-facebook-f,
 .fa-youtube {
-  font-size: 14px;
+  font-size: 25px;
   color: #fff;
-  width: 27px;
-  height: 30px;
+  width: 47px;
+  height: 47px;
   display: inline-flex !important;
   position: relative;
   justify-content: center;
@@ -2538,6 +2546,7 @@ New Css Start
   background-color: #025c89;
   /* padding: 7px; */
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .fa-linkedin-in:hover,
@@ -3685,13 +3694,20 @@ extra
   padding: 3% 0%;
 }
 
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
 .hero4 {
   background-image: url(../images/wel-bg.png);
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  padding: 2% 0 2%;
+  padding: 2% 0 0%;
   background-color: #f9f9f9;
 }
 
