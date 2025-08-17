@@ -62,7 +62,7 @@
     <div class="popup-container" id="popupContainer">
       <button class="popup-close-btn" id="popupCloseBtn">&times;</button>
       <h2>Request A Quote</h2>
-      <form action="response.php" method="POST">
+      <form action="response.php" method="POST" id="userForm">
         <div class="form-group">
           <input type="text" id="name" placeholder=" " name="name" required />
           <label for="name">Your Name</label>
@@ -206,7 +206,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#">Facility Service</a>
+                  <a href="#">Facility Services</a>
                   <ul>
                     <li>
                       <a href="housekeeping-service.html">Housekeeping Service</a>
@@ -254,7 +254,7 @@
           </li>
           <li>
             <img src="images/banner1.jpg"
-              title="<h2>ADVANCED, INTELLIGENT and Cost Effective Solutions in SECURING YOUR BUSINESS</h2><a href='security-guard.html'>Know More</a>" />
+              title="<h2>ADVANCED, INTELLIGENT and Cost Effective Solutions in SECURING YOUR BUSINESS</h2><a href='building-security.html'>Know More</a>" />
           </li>
           <li>
             <img src="images/banner3.jpg"
@@ -1430,18 +1430,6 @@
         <a href="mailto:sales@protexivesecurity.com" class="link2">sales@protexivesecurity.com</a><br /><br />
         <i class="fa-solid fa-envelope footer_icon"></i>
         <a href="mailto:operations@protexivesecurity.com" class="link2">operations@protexivesecurity.com</a><br /><br />
-
-        <i class="fa-solid fa-map-location-dot footer_icon"></i>
-        <a href="https://maps.app.goo.gl/rmpyJ7F6cq3yoApx5" target="_blank" class="link2">Google Map</a>
-        <br /><br />
-        <div class="top_social">
-          <a href="https://www.facebook.com/Protexive/" class="link3" target="_blank"><i
-              class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
-              class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/protexivesecurityservices/" class="link3" target="_blank"><i
-              class="fa-brands fa-linkedin-in"></i></a>
-        </div>
         <div style="
               grid-template-columns: 1fr 1fr 1fr;
               gap: 10px;
@@ -1481,6 +1469,7 @@
       <div class="col_sm5_footer2 bullet ftr_txt">
         <h2>Quick <span>Links</span></h2>
         <ul>
+          <li><a href="why-us.html">Why Us</a></li>
           <li><a href="operation.html">Operation</a></li>
           <li><a href="training.html">Training</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -1511,20 +1500,73 @@
 
       <div class="col_sm5_footer2 bullet ftr_txt">
         <h2>Contact <span>Us</span></h2>
-        <ul>
-          <li><a href="#">Ahmedabad</a></li>
-          <li><a href="#">Bengaluru</a></li>
-          <li><a href="#">Chennai</a></li>
-          <li><a href="#">Delhi</a></li>
-          <li><a href="#">Hyderabad</a></li>
-          <li><a href="#">Lucknow</a></li>
-          <li><a href="#">Mumbai</a></li>
-          <li><a href="#">Pune</a></li>
-        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d240996.53961673414!2d72.858413!3d19.3010165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bbec09f361ab%3A0xa2c61c2474908700!2sPROTEXIVE%20SECURITY%20SERVICES!5e0!3m2!1sen!2sin!4v1755408835364!5m2!1sen!2sin"
+          width="100%" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br />
+        <div class="top_social">
+          <a href="https://www.facebook.com/Protexive/" class="link3" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/protexivesecurityservices/" class="link3" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/protexivesecurityservices/" class="link3" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
 
       <div class="clear"></div>
+      <div class="col_sm1 bullet ftr_txt2">
+        <h2>Location</h2>
+        <div class="inline-city-links">
+          <a class="pdng-left" href="#">Ahmedabad</a> |
+          <a href="#">Bengaluru</a> | <a href="#">Chennai</a> |
+          <a href="#">Delhi</a> | <a href="#">Hyderabad</a> |
+          <a href="#">Lucknow</a> | <a href="#">Mumbai</a> |
+          <a href="#">Pune</a>
+        </div>
+        <style>
+          .ftr_txt2 {
+            color: #fff;
+          }
+
+          .pdng-left {
+            padding-left: 0 !important;
+          }
+
+          .ftr_txt2 h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0% 0% 1% 0%;
+            color: #fff;
+            position: relative;
+            text-align: left;
+          }
+
+          .ftr_txt2 h2 span {
+            color: #025c89;
+          }
+
+          .inline-city-links {
+            margin: 10px 0;
+            line-height: 1.6;
+          }
+
+          .inline-city-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 0 15px;
+          }
+
+          @media screen and (max-width: 990px) {
+            .pdng-left {
+              padding-left: 15px !important;
+            }
+          }
+        </style>
+      </div>
     </div>
     <div class="clear"></div>
   </div>
@@ -1548,35 +1590,60 @@
     <div class="clear"></div>
   </div>
   <!-----footer----->
-  <script>
+ <script>
     const popupTriggerBtns = document.querySelectorAll(".popupTriggerBtn");
     const popupCloseBtn = document.getElementById("popupCloseBtn");
     const popupBackdrop = document.getElementById("popupBackdrop");
     const popupContainer = document.getElementById("popupContainer");
+    const userForm = document.getElementById("userForm");
 
+    // Function to open popup
     function openPopup() {
       popupBackdrop.classList.add("active");
       document.body.classList.add("modal-open");
     }
 
+    // Function to close popup
     function closePopup() {
       popupBackdrop.classList.remove("active");
       document.body.classList.remove("modal-open");
     }
 
-    window.addEventListener("load", openPopup);
-
-    popupTriggerBtns.forEach((btn) => {
-      btn.addEventListener("click", openPopup);
-    });
-
-    popupCloseBtn.addEventListener("click", closePopup);
-
-    popupBackdrop.addEventListener("click", (e) => {
-      if (!popupContainer.contains(e.target)) {
-        closePopup();
+    // ✅ Show popup on first load IF not submitted yet
+    window.addEventListener("load", () => {
+      if (!localStorage.getItem("formSubmitted")) {
+        openPopup();
       }
     });
+
+    // Open popup on trigger button click (even after form submitted)
+    if (popupTriggerBtns.length > 0) {
+      popupTriggerBtns.forEach((btn) => {
+        btn.addEventListener("click", openPopup);
+      });
+    }
+
+    // Close popup on close button click
+    if (popupCloseBtn) {
+      popupCloseBtn.addEventListener("click", closePopup);
+    }
+
+    // Close popup if clicked outside the container
+    if (popupBackdrop) {
+      popupBackdrop.addEventListener("click", (e) => {
+        if (!popupContainer.contains(e.target)) {
+          closePopup();
+        }
+      });
+    }
+
+    // When user submits form
+    if (userForm) {
+      userForm.addEventListener("submit", (e) => {
+        // Let the form submit normally to backend
+        localStorage.setItem("formSubmitted", "true");
+      });
+    }
   </script>
 
   <script type="text/javascript" src="engine1/wowslider.js"></script>

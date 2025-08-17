@@ -875,12 +875,12 @@ New Css Start
 }
 
 .footer_elem {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    opacity: 0.03;
-    filter: hue-rotate(191deg) invert(1);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  opacity: 0.03;
+  filter: hue-rotate(191deg) invert(1);
 }
 
 .play_annime {
@@ -5607,6 +5607,10 @@ table th {
 }
 
 @media only screen and (max-width: 470px) {
+  .col_sm11 {
+    width: 98%;
+  }
+
   @keyframes top_down3 {
     0% {
       right: 0%;
@@ -5711,9 +5715,6 @@ table th {
 }
 
 @media only screen and (max-width: 320px) {
-  .col_sm11 {
-    width: 98%;
-  }
 
   .col_sm9 {
     padding-top: 1px;
