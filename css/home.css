@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Shadows+Into+Light&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Shadows+Into+Light&display=swap"); */
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/*font-family: "Montserrat", sans-serif;*/
-/* font-family: "Montserrat", sans-serif; */
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
+/*    font-family: "Poppins", sans-serif;*/
+/*     font-family: "Poppins", sans-serif; */
 
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -24,7 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ::selection {
@@ -89,7 +89,7 @@ New Css Start
   text-transform: uppercase;
   font-weight: 600;
   font-size: 55px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .whatsapp-icon>a img {
@@ -170,7 +170,7 @@ New Css Start
 }
 
 .form-action button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #025c89;
   padding: 15px 30px;
   border-radius: 0px;
@@ -254,12 +254,12 @@ New Css Start
   color: #272a78;
   line-height: 140%;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0 1%;
 }
 
 .cont-text1 .con-text p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #000;
@@ -276,7 +276,7 @@ New Css Start
 }
 
 .ctc {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   grid-column: span 2;
@@ -300,7 +300,7 @@ New Css Start
 }
 
 .card_bullet3 ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -358,7 +358,7 @@ New Css Start
 }
 
 .whychoose_txt h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #e21515;
@@ -368,7 +368,7 @@ New Css Start
 }
 
 .whychoose_txt h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: #000;
@@ -384,7 +384,7 @@ New Css Start
 }
 
 .why_ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: #000;
   margin: 5.5% 0%;
@@ -519,7 +519,7 @@ New Css Start
 }
 
 .popup-container h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 140%;
@@ -579,7 +579,7 @@ New Css Start
   content: "Clients";
   position: absolute;
   left: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #025c89;
@@ -599,7 +599,7 @@ New Css Start
 }
 
 .common_footer_tags li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #025c89;
@@ -738,7 +738,7 @@ New Css Start
 }
 
 .wel_txt3 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 140%;
@@ -948,7 +948,7 @@ New Css Start
 }
 
 .card_bullet ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -967,7 +967,7 @@ New Css Start
 }
 
 .wel_txt>h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #171717;
@@ -976,7 +976,7 @@ New Css Start
 }
 
 .wel_txt2>h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #171717;
@@ -991,7 +991,7 @@ New Css Start
 }
 
 .card_bullet2 ul li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -1085,7 +1085,7 @@ New Css Start
 }
 
 .house_bg h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #000;
@@ -1095,7 +1095,7 @@ New Css Start
 }
 
 .house_bg p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #000;
@@ -1105,7 +1105,7 @@ New Css Start
 }
 
 .facility_management h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 31px;
   font-weight: 700;
   line-height: 140%;
@@ -1117,7 +1117,7 @@ New Css Start
 }
 
 .facility_management h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 140%;
@@ -1126,7 +1126,7 @@ New Css Start
 }
 
 .facility_management p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 150%;
@@ -1221,7 +1221,7 @@ New Css Start
 }
 
 .content h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #000;
@@ -1231,7 +1231,7 @@ New Css Start
 }
 
 .content p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #000;
@@ -1261,7 +1261,7 @@ New Css Start
 }
 
 .secur_ser_txt p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 150%;
@@ -1271,7 +1271,7 @@ New Css Start
 }
 
 .secur_ser_txt h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 31px;
   font-weight: 700;
   line-height: 140%;
@@ -1315,7 +1315,7 @@ New Css Start
 }
 
 .count_bg>div:nth-child(2)>h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 34px;
   font-weight: 700;
   color: #fff;
@@ -1324,7 +1324,7 @@ New Css Start
 }
 
 .count_bg>div:nth-child(2)>p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #dddddd;
@@ -1507,7 +1507,7 @@ New Css Start
 }
 
 .top_contact>div>.col_sm88>p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #6f6f6f;
@@ -1516,7 +1516,7 @@ New Css Start
 }
 
 .top_contact>div>.col_sm88>a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #000000;
@@ -1603,7 +1603,7 @@ New Css Start
 }
 
 .mi_vi_bg h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 195px;
   text-align: center;
   line-height: 80%;
@@ -1613,7 +1613,7 @@ New Css Start
 }
 
 .mi_vi_bg h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 140%;
@@ -1623,7 +1623,7 @@ New Css Start
 }
 
 .mi_vi_bg p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #4d4d4d;
@@ -1674,7 +1674,7 @@ New Css Start
 }
 
 .mi_vi_bg1 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 140%;
@@ -1686,7 +1686,7 @@ New Css Start
 }
 
 .mi_vi_bg1 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #4d4d4d;
@@ -1737,7 +1737,7 @@ New Css Start
 }
 
 .mi_vi_bg2 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 140%;
@@ -1749,7 +1749,7 @@ New Css Start
 }
 
 .mi_vi_bg2 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #4d4d4d;
@@ -1800,7 +1800,7 @@ New Css Start
 }
 
 .mi_vi_bg3 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 140%;
@@ -1812,7 +1812,7 @@ New Css Start
 }
 
 .mi_vi_bg3 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #4d4d4d;
@@ -1863,7 +1863,7 @@ New Css Start
 }
 
 .mi_vi_bg4 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 140%;
@@ -1875,7 +1875,7 @@ New Css Start
 }
 
 .mi_vi_bg4 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #4d4d4d;
@@ -1995,7 +1995,7 @@ New Css Start
 }
 
 .mi_vi_bg5 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 140%;
@@ -2007,7 +2007,7 @@ New Css Start
 }
 
 .mi_vi_bg5 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #4d4d4d;
@@ -2027,7 +2027,7 @@ New Css Start
 }
 
 .prod_txt h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
@@ -2038,7 +2038,7 @@ New Css Start
 }
 
 .prod_txt p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 600;
   color: #000000;
@@ -2088,7 +2088,7 @@ New Css Start
 }
 
 .why_content h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #000;
@@ -2118,7 +2118,7 @@ New Css Start
 }
 
 .products h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #171717;
@@ -2145,7 +2145,7 @@ New Css Start
 }
 
 .goog-te-gadget .goog-te-combo {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   padding: 0px 25px;
@@ -2192,7 +2192,7 @@ New Css Start
 }
 
 .form_head h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #000000;
@@ -2225,7 +2225,7 @@ New Css Start
 }
 
 .flag_brd h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -2236,7 +2236,7 @@ New Css Start
 }
 
 .flag_bg h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -2264,7 +2264,7 @@ New Css Start
 }
 
 .text-style h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #1a2670;
@@ -2276,7 +2276,7 @@ New Css Start
 }
 
 .text-style h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
@@ -2286,7 +2286,7 @@ New Css Start
 }
 
 .text-style p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #000000;
@@ -2296,7 +2296,7 @@ New Css Start
 }
 
 .text-style a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #8cc43f;
   padding: 15px 25px;
   border-radius: 4px;
@@ -2338,7 +2338,7 @@ New Css Start
 }
 
 .inner_banner_txt h3 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -2382,7 +2382,7 @@ New Css Start
 }
 
 .about_bg_txt p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-weight: 400;
   color: #fff;
@@ -2423,7 +2423,7 @@ New Css Start
 }
 
 .client_details p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -2438,7 +2438,7 @@ New Css Start
 }
 
 .review_txt>p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -2492,7 +2492,7 @@ New Css Start
 }
 
 .top_info p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 170%;
@@ -2518,7 +2518,7 @@ New Css Start
 }
 
 .top_social p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -2610,7 +2610,7 @@ New Css Start
   color: #555555;
   line-height: 140%;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 1% 0% 3% !important;
 }
 
@@ -2647,7 +2647,7 @@ New Css Start
 }
 
 .contact-top>a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #025c89;
   padding: 15px 25px;
   border-radius: 0px;
@@ -2793,7 +2793,7 @@ ul {
 }
 
 .featu_txt p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -2804,7 +2804,7 @@ ul {
 }
 
 .featu_txt a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -2833,7 +2833,7 @@ ul {
 }
 
 .wel_txt>h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: rgb(214 37 63);
@@ -2868,7 +2868,7 @@ ul {
 }
 
 .wel_txt>p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #000;
@@ -2878,7 +2878,7 @@ ul {
 }
 
 .wel_txt h4 {
-  font-family: math;
+  font-family: "Poppins", sans-serif;
   font-size: 29px;
   font-weight: 700;
   margin: 0 0% 0%;
@@ -2891,7 +2891,7 @@ ul {
 }
 
 .wel_txt h5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 140%;
@@ -2899,7 +2899,7 @@ ul {
 }
 
 .wel_btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #025c89;
   padding: 15px 30px;
   border-radius: 0px;
@@ -2916,7 +2916,7 @@ ul {
 }
 
 .wel_txt2>h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #d6253f;
@@ -2951,7 +2951,7 @@ ul {
 }
 
 .wel_txt2>p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #000;
@@ -3043,7 +3043,7 @@ get started
   cursor: pointer;
   z-index: 9999;
   rotate: -90deg;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Sliding Form Panel */
@@ -3084,7 +3084,7 @@ get started
 }
 
 .form-panel h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 140%;
@@ -3738,7 +3738,7 @@ Home page our product
 --------------------------------------------------------------*/
 
 .places li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -3749,7 +3749,7 @@ Home page our product
 }
 
 .places span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -3764,7 +3764,7 @@ Home page our product
 }
 
 .ftr_txt h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 600;
   margin: 0% 0% 6% 0%;
@@ -3801,7 +3801,7 @@ Home page our product
 } */
 
 .ftr_txt p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   margin: 3% 0%;
@@ -3813,7 +3813,7 @@ Home page our product
 }
 
 .ftr_txt h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 700;
   margin: 6% 0 1%;
@@ -3837,7 +3837,7 @@ Home page our product
 } */
 
 .ftr_txt ul li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #d3d3d3;
   text-decoration: none;
   font-weight: 500;
@@ -3856,7 +3856,7 @@ Home page our product
 }
 
 .ftr_lt_txt {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 160%;
@@ -3889,7 +3889,7 @@ Home page our product
 }
 
 .overlay-banner h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 55px;
   font-weight: 500;
   color: rgb(255 255 255);
@@ -3899,7 +3899,7 @@ Home page our product
 }
 
 .overlay-banner a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 500;
   color: #ffffff;
@@ -3917,7 +3917,7 @@ Home page our product
 }
 
 .abt-text p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -3991,7 +3991,7 @@ Bullet
   font-weight: 400;
   margin: 1.6% 0%;
   line-height: 150%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   text-align: justify;
 }
@@ -4010,7 +4010,7 @@ Bullet
   font-weight: 400;
   margin: 0.9% 0%;
   line-height: 150%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
   text-align: left;
   /* flex: 18%; */
@@ -4032,7 +4032,7 @@ Bullet
   font-weight: 400;
   margin: 5% 0%;
   line-height: 150%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
   text-align: left;
   flex: 18%;
@@ -4052,7 +4052,7 @@ Bullet
   font-weight: 400;
   margin: 0.9% 0%;
   line-height: 150%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
   text-align: left;
   /* flex: 18%; */
@@ -4089,7 +4089,7 @@ table th,
 table td {
   padding: 0.7%;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
   font-weight: 500;
   font-size: 15px;
@@ -4100,7 +4100,7 @@ table td {
 .body_text111 {
   padding: 2.4%;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
   font-weight: 500;
   font-size: 15px;
@@ -4115,7 +4115,7 @@ table td b {
 
 table th {
   font-size: 0.85em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
   font-weight: 600;
   font-size: 16px;
@@ -4125,7 +4125,7 @@ table th {
   font-size: 18px;
   font-weight: 600;
   color: #0d9bcd;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   padding: 0.6%;
 }
@@ -4134,7 +4134,7 @@ table th {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   text-transform: uppercase;
 }
@@ -4156,7 +4156,7 @@ table th {
 }
 
 .overlay-banner h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 55px;
   font-weight: 500;
   color: rgb(255 255 255);
@@ -4166,7 +4166,7 @@ table th {
 }
 
 .overlay-banner a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 500;
   color: #ffffff;
@@ -4184,7 +4184,7 @@ table th {
 }
 
 .gbt-text p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -4208,7 +4208,7 @@ table th {
 }
 
 .gbt-text2 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 600;
   color: #000000;
@@ -4219,7 +4219,7 @@ table th {
 
 .gbt-text2 h3 {
   font-size: 22px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: rgb(140 196 63);
   line-height: 140%;
@@ -4229,7 +4229,7 @@ table th {
 }
 
 .gbt-text2 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -4239,7 +4239,7 @@ table th {
 }
 
 .gbt-text2 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #000;
@@ -4260,7 +4260,7 @@ table th {
 }
 
 .gbt-text3 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #171717;
@@ -4269,7 +4269,7 @@ table th {
 }
 
 .gbt-text3 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 600;
   color: #000000;
@@ -4279,7 +4279,7 @@ table th {
 }
 
 .gbt-text5 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 600;
   color: #000;
@@ -4289,7 +4289,7 @@ table th {
 }
 
 .gbt-text5 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -4299,7 +4299,7 @@ table th {
 }
 
 .gbt-text3 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -4328,7 +4328,7 @@ table th {
 }
 
 .btm-banner h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 600;
   color: #fff;
@@ -4338,7 +4338,7 @@ table th {
 }
 
 .btm-banner p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -4364,7 +4364,7 @@ table th {
 }
 
 .overlay-banner h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 55px;
   font-weight: 500;
   color: rgb(255 255 255);
@@ -4374,7 +4374,7 @@ table th {
 }
 
 .overlay-banner a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 500;
   color: #ffffff;
@@ -4392,7 +4392,7 @@ table th {
 }
 
 .abt-text p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -4416,7 +4416,7 @@ table th {
 }
 
 .abt-text2 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 600;
   color: #000000;
@@ -4426,7 +4426,7 @@ table th {
 }
 
 .abt-text2 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: rgb(140 196 63);
@@ -4437,7 +4437,7 @@ table th {
 }
 
 .abt-text2 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -4447,7 +4447,7 @@ table th {
 }
 
 .abt-text2 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #000;
@@ -4466,7 +4466,7 @@ table th {
 }
 
 .abt-text3 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #171717;
@@ -4475,7 +4475,7 @@ table th {
 }
 
 .abt-text3 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 600;
   color: #000000;
@@ -4485,7 +4485,7 @@ table th {
 }
 
 .abt-text3 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -4506,7 +4506,7 @@ table th {
 }
 
 .btm-banner h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 600;
   color: #fff;
@@ -4516,7 +4516,7 @@ table th {
 }
 
 .btm-banner p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -4528,7 +4528,7 @@ table th {
 /*table*/
 
 .contact h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #171717;
@@ -4544,7 +4544,7 @@ table th {
 }
 
 .contact_sub h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 600;
   color: #000000;
@@ -4554,7 +4554,7 @@ table th {
 }
 
 .contact_sub p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #000;
@@ -4569,7 +4569,7 @@ table th {
 }
 
 .creer-text3 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #171717;
@@ -4579,7 +4579,7 @@ table th {
 }
 
 .creer-text3 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: rgb(0, 172, 236);
@@ -4595,7 +4595,7 @@ table th {
 }
 
 .btm-banner2 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 600;
   color: #fff;
@@ -4605,7 +4605,7 @@ table th {
 }
 
 .btm-banner2 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
@@ -4619,7 +4619,7 @@ table th {
 }
 
 .flag-bx h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 26px;
   font-weight: 600;
   color: #fff;
@@ -4633,7 +4633,7 @@ table th {
 }
 
 .flag-text h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #fff;
@@ -5139,9 +5139,36 @@ table th {
     flex-direction: row;
   }
 
-  .top_contact>div:nth-child(2) {
+  .top_flex2:nth-child(2) {
     display: none;
   }
+    .col_sm8 {
+    width: 29%;
+    margin: 1% !important;
+  }
+
+  .col_sm88 {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+  }
+  .top_contact>div>.col_sm88>p {
+    font-size: 8px;
+}
+    .top_contact>div>.col_sm88>a {
+        font-size: 10px;
+    }
+    .whatsapp-icon>a {
+    font-size: 31px;
+}
+    .top_contact>div:nth-child(2) {
+        width: 127px;
+        align-items: center;
+    }
+        .fa-location-dot, .fa-phone, .fa-envelope {
+        padding: 10px;
+        font-size: 10px !important;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -5342,12 +5369,6 @@ table th {
     width: 98%;
   }
 
-  .fa-location-dot,
-  .fa-phone,
-  .fa-envelope {
-    padding: 2%;
-  }
-
   .min_h_talent {
     min-height: 170px;
   }
@@ -5530,6 +5551,7 @@ table th {
 
 @media only screen and (max-width: 500px) {
 
+
   .logo {
     width: 150px !important;
     margin: 3% 0%;
@@ -5696,10 +5718,7 @@ table th {
     width: 48%;
   }
 
-  .col_sm8 {
-    width: 98%;
-    margin: 1% !important;
-  }
+
 
   .col_sm88 {
     width: 98%;

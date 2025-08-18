@@ -62,11 +62,11 @@ input:focus {
     margin: 1%;
     float: left;
     padding: 12px 10px;
-    font-family: "Livvic", sans-serif;
+        font-family: "Poppins", sans-serif;
     font-size: 14px !important;
 }
 #contactForm label {
-    font-family: "Livvic", sans-serif;
+        font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: #000000;
@@ -91,11 +91,11 @@ input:focus {
     border: 1px solid #e5e5e5 !important;
     margin: 0 14px 0px;
     padding: 12px 10px;
-    font-family: "Livvic", sans-serif;
+        font-family: "Poppins", sans-serif;
 }
 
 #contactForm button[type="submit"] {
-    font-family: "Livvic", sans-serif;
+        font-family: "Poppins", sans-serif;
     background-color: #8cc43f;
     padding: 13px 30px;
     border-radius: 4px;

@@ -190,7 +190,7 @@
 	/* width: 50%; */
 	margin: 0 auto 7%;
 	z-index: 11;
-	font-family: "Montserrat", sans-serif;
+	    font-family: "Poppins", sans-serif;
 	left: 9%;
 }
 
@@ -208,7 +208,7 @@
 }
 
 #wowslider-container1 .ws-title span h3 {
-	font-family: "Montserrat", sans-serif;
+	    font-family: "Poppins", sans-serif;
 	font-size: 24px;
 	font-weight: 600;
 	color: #00acec;
@@ -219,7 +219,7 @@
 }
 
 #wowslider-container1 .ws-title span h2 {
-	font-family: "Montserrat", sans-serif;
+	    font-family: "Poppins", sans-serif;
 	font-size: 28px;
 	font-weight: 700;
 	line-height: 120%;
@@ -238,7 +238,7 @@
 
 /* 
 #wowslider-container1 .ws-title span p {
-	font-family: "Montserrat", sans-serif;
+	    font-family: "Poppins", sans-serif;
 	font-size: 57px;
 	font-weight: 700;
 	color: #000000;
@@ -247,7 +247,7 @@
 } */
 
 #wowslider-container1 .ws-title span p {
-	font-family: "Montserrat", sans-serif;
+	    font-family: "Poppins", sans-serif;
 	font-size: 17px;
 	font-weight: 500;
 	color: #fff;
@@ -256,7 +256,7 @@
 }
 
 #wowslider-container1 .ws-title span button {
-	font-family: "Montserrat", sans-serif;
+	    font-family: "Poppins", sans-serif;
 	background-color: #8cc43f;
 	padding: 15px 25px;
 	border-radius: 4px;
@@ -286,7 +286,7 @@
 
 
 /* #wowslider-container1 .ws-title span button:nth-child(5) {
-    font-family: "Montserrat", sans-serif;
+        font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
     padding: 12px 28px;

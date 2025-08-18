@@ -441,7 +441,7 @@ if ($_POST) {
           }
 
           .ftr_txt2 h2 {
-            font-family: "Montserrat", sans-serif;
+                font-family: "Poppins", sans-serif;
             font-size: 22px;
             font-weight: 600;
             margin: 0% 0% 1% 0%;
