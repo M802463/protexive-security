@@ -475,7 +475,7 @@
           }
 
           .ftr_txt2 h2 {
-                font-family: "Poppins", sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 22px;
             font-weight: 600;
             margin: 0% 0% 1% 0%;
@@ -547,12 +547,11 @@
     });
   </script>
 
-   <script>
+  <script>
     const popupTriggerBtns = document.querySelectorAll(".popupTriggerBtn");
     const popupCloseBtn = document.getElementById("popupCloseBtn");
     const popupBackdrop = document.getElementById("popupBackdrop");
     const popupContainer = document.getElementById("popupContainer");
-    const userForm = document.getElementById("userForm");
 
     // Function to open popup
     function openPopup() {
@@ -566,41 +565,23 @@
       document.body.classList.remove("modal-open");
     }
 
-    // ✅ Show popup on first load IF not submitted yet
-    window.addEventListener("load", () => {
-      if (!localStorage.getItem("formSubmitted")) {
-        openPopup();
-      }
+    // Open popup on page load
+    // window.addEventListener("load", openPopup);
+
+    // Open popup on any trigger button click
+    popupTriggerBtns.forEach((btn) => {
+      btn.addEventListener("click", openPopup);
     });
 
-    // Open popup on trigger button click (even after form submitted)
-    if (popupTriggerBtns.length > 0) {
-      popupTriggerBtns.forEach((btn) => {
-        btn.addEventListener("click", openPopup);
-      });
-    }
-
     // Close popup on close button click
-    if (popupCloseBtn) {
-      popupCloseBtn.addEventListener("click", closePopup);
-    }
+    popupCloseBtn.addEventListener("click", closePopup);
 
     // Close popup if clicked outside the container
-    if (popupBackdrop) {
-      popupBackdrop.addEventListener("click", (e) => {
-        if (!popupContainer.contains(e.target)) {
-          closePopup();
-        }
-      });
-    }
-
-    // When user submits form
-    if (userForm) {
-      userForm.addEventListener("submit", (e) => {
-        // Let the form submit normally to backend
-        localStorage.setItem("formSubmitted", "true");
-      });
-    }
+    popupBackdrop.addEventListener("click", (e) => {
+      if (!popupContainer.contains(e.target)) {
+        closePopup();
+      }
+    });
   </script>
 
   <script type="text/javascript" src="engine1/wowslider.js"></script>
