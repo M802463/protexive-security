@@ -5142,7 +5142,8 @@ table th {
   .top_flex2:nth-child(2) {
     display: none;
   }
-    .col_sm8 {
+
+  .col_sm8 {
     width: 29%;
     margin: 1% !important;
   }
@@ -5152,23 +5153,30 @@ table th {
     display: flex;
     flex-direction: column;
   }
+
   .top_contact>div>.col_sm88>p {
     font-size: 8px;
-}
-    .top_contact>div>.col_sm88>a {
-        font-size: 10px;
-    }
-    .whatsapp-icon>a {
+  }
+
+  .top_contact>div>.col_sm88>a {
+    font-size: 10px;
+  }
+
+  .whatsapp-icon>a {
     font-size: 31px;
-}
-    .top_contact>div:nth-child(2) {
-        width: 127px;
-        align-items: center;
-    }
-        .fa-location-dot, .fa-phone, .fa-envelope {
-        padding: 10px;
-        font-size: 10px !important;
-    }
+  }
+
+  .top_contact>div:nth-child(2) {
+    width: 127px;
+    align-items: center;
+  }
+
+  .fa-location-dot,
+  .fa-phone,
+  .fa-envelope {
+    padding: 10px;
+    font-size: 10px !important;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -5409,6 +5417,10 @@ table th {
 
   .popup-container form {
     display: block;
+  }
+
+  .count_bg>div:nth-child(2) {
+    width: 20%;
   }
 
   .form-group {
